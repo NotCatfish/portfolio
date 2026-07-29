@@ -46,7 +46,7 @@ export default function Hero() {
           {t.desc}
         </motion.p>
 
-        <div className="flex flex-col sm:flex-row gap-8 items-center">
+        <div className="flex flex-col gap-8 items-center">
           <motion.a
             href="#work"
             initial={{ opacity: 0 }}
