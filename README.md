@@ -1,5 +1,7 @@
 # Indraneel Samanta - Personal Portfolio
 
+🚀 **[Click here to visit the live site!](https://indraneelsamanta.vercel.app/)**
+
 A premium, modern personal portfolio website built with React, Vite, and Tailwind CSS v4, featuring a "Zen & Sakura" inspired design with dynamic animations and internationalization (English/Japanese).
 
 ## Features
