@@ -60,7 +60,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-            href="/resume.pdf"
+            href="/Indraneel_Samanta_Resume.pdf"
             download="Indraneel_Samanta_Resume.pdf"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
