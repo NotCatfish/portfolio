@@ -54,6 +54,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 1 }}
             className="group flex items-center gap-4 font-sans text-sm tracking-widest uppercase hover:text-sakura transition-colors duration-300"
           >
+            <span className="w-12 h-[1px] bg-ink-900 dark:bg-snow-100 group-hover:bg-sakura group-hover:w-16 transition-all duration-300"></span>
             <span>{t.explore}</span>
             <span className="w-12 h-[1px] bg-ink-900 dark:bg-snow-100 group-hover:bg-sakura group-hover:w-16 transition-all duration-300"></span>
           </motion.a>
