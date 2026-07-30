@@ -28,7 +28,7 @@ export default function Projects() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="mb-20"
       >
-        <h2 className={`font-serif ${lang === 'ja' ? 'text-5xl md:text-6xl' : 'text-4xl md:text-5xl'} mb-4`}>{t.title}</h2>
+        <h2 className={`font-serif ${lang === 'jp' ? 'text-5xl md:text-6xl' : 'text-4xl md:text-5xl'} mb-4`}>{t.title}</h2>
         <div className="w-12 h-[1px] bg-sakura"></div>
       </motion.div>
 
@@ -60,7 +60,7 @@ export default function Projects() {
             
             <div className="flex justify-between items-start">
               <div>
-                <h3 className={`font-serif ${lang === 'ja' ? 'text-3xl' : 'text-2xl'} mb-2 group-hover:text-sakura transition-colors`}>{project.title}</h3>
+                <h3 className={`font-serif ${lang === 'jp' ? 'text-3xl' : 'text-2xl'} mb-2 group-hover:text-sakura transition-colors`}>{project.title}</h3>
                 <p className="font-sans text-xs tracking-widest uppercase text-ink-700 dark:text-snow-200 mb-2">{project.category}</p>
                 <p className="font-sans text-xs text-ink-900/60 dark:text-snow-100/60">{project.tech}</p>
               </div>

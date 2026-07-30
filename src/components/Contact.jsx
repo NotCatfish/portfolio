@@ -56,7 +56,7 @@ export default function Contact() {
         <p className="font-sans text-sm tracking-[0.3em] uppercase mb-4 text-ink-700 dark:text-snow-200">
           {t.subtitle}
         </p>
-        <h2 className={`font-serif ${lang === 'ja' ? 'text-6xl md:text-7xl' : 'text-5xl md:text-6xl'} mb-6`}>{t.title}</h2>
+        <h2 className={`font-serif ${lang === 'jp' ? 'text-6xl md:text-7xl' : 'text-5xl md:text-6xl'} mb-6`}>{t.title}</h2>
         <p className="font-sans text-lg text-ink-700 dark:text-snow-200 max-w-2xl mx-auto">
           {t.desc}
         </p>

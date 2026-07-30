@@ -9,12 +9,12 @@ export const LanguageProvider = ({ children }) => {
     // Detect browser language
     const browserLang = navigator.language || navigator.userLanguage;
     if (browserLang && browserLang.toLowerCase().startsWith('ja')) {
-      setLang('ja');
+      setLang('jp'); // Use 'jp' internal code
     }
   }, []);
 
   const toggleLanguage = () => {
-    setLang(prev => (prev === 'en' ? 'ja' : 'en'));
+    setLang(prev => (prev === 'en' ? 'jp' : 'en'));
   };
 
   return (

@@ -177,7 +177,7 @@ export const translations = {
       }
     }
   },
-  ja: {
+  jp: {
     nav: { work: '実績', about: '自己紹介', contact: '連絡先', resume: '履歴書' },
     hero: {
       name: 'サマンタ・インドラニール',

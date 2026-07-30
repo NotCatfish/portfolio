@@ -23,7 +23,7 @@ export default function About() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
         >
-          <h2 className={`font-serif ${lang === 'ja' ? 'text-5xl md:text-6xl' : 'text-4xl md:text-5xl'} mb-8`}>{t.title}</h2>
+          <h2 className={`font-serif ${lang === 'jp' ? 'text-5xl md:text-6xl' : 'text-4xl md:text-5xl'} mb-8`}>{t.title}</h2>
           <div className="space-y-6 font-sans text-ink-700 dark:text-snow-200 leading-relaxed text-lg">
             <p>{t.p1}</p>
             <p>{t.p2}</p>
@@ -40,7 +40,7 @@ export default function About() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="lg:pl-12"
         >
-          <h3 className={`font-serif ${lang === 'ja' ? 'text-3xl' : 'text-2xl'} mb-6`}>{t.core}</h3>
+          <h3 className={`font-serif ${lang === 'jp' ? 'text-3xl' : 'text-2xl'} mb-6`}>{t.core}</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-sans">
             <div>
