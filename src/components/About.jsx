@@ -1,17 +1,24 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../LanguageContext';
 import { translations } from '../i18n/translations';
+
+let hasAnimated = false;
 
 export default function About() {
   const { lang } = useLanguage();
   const t = translations[lang].about;
 
+  useEffect(() => {
+    hasAnimated = true;
+  }, []);
+
   return (
     <section id="about" className="py-32 px-6 bg-ink-900/5 dark:bg-snow-100/5 relative overflow-hidden">
-      <div key={lang} className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
+          initial={hasAnimated ? false : { opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
@@ -27,7 +34,7 @@ export default function About() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 30 }}
+          initial={hasAnimated ? false : { opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: "easeOut" }}

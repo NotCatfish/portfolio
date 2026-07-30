@@ -1,0 +1,179 @@
+\documentclass[letterpaper,11pt]{article}
+
+% !!! OVERLEAF COMPILER INSTRUCTION !!!
+% To compile this Japanese document on Overleaf:
+% 1. Click 'Menu' in the top left corner.
+% 2. Change the 'Compiler' setting from 'pdfLaTeX' to 'XeLaTeX'.
+% 3. Click 'Recompile'.
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+% Japanese Support Package for XeLaTeX
+\usepackage{xeCJK}
+\setCJKmainfont{IPAexGothic} % Clean sans-serif Japanese font
+\setCJKsansfont{IPAexGothic}
+
+% English font support
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\[2pt]
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=5pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape インドラニール・サマンタ} \\ \vspace{6pt}
+    \small +91 8879163073 $|$ \href{mailto:indraneelsamanta2005@gmail.com}{\underline{indraneelsamanta2005@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/indraneel-samanta-724782347}{\underline{LinkedIn}} $|$
+    \href{https://github.com/NotCatfish}{\underline{GitHub}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{学歴}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dwarkadas J. Sanghvi 工科大学 (DJSCE)}{卒業予定: 2028年5月}
+      {人工知能・機械学習（AIML）学士課程}{}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{テクニカルスキル}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{プログラミング言語}{: Python, C++, SQL, JavaScript, TypeScript} \\[4pt]
+     \textbf{AI/ML \& データ}{: PyTorch, TensorFlow, Scikit-Learn, Pandas, EDA, Predictive Modeling} \\[4pt]
+     \textbf{Web \& クラウド}{: React.js, Next.js, Tailwind CSS, Supabase (PostgreSQL)} \\[4pt]
+     \textbf{コアコンセプト}{: システム設計, OOP, データ構造とアルゴリズム}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{プロジェクト}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/NotCatfish/otakufy}{\textbf{Otakufy $|$ フルスタック日本語学習プラットフォーム}} $|$ \emph{Next.js, React, Supabase} $|$ \href{https://otakufy.vercel.app/}{\textbf{Live Site}}}{}
+          \resumeItemListStart
+            \resumeItem{間隔反復アルゴリズムとインタラクティブなクイズを活用した包括的な教育用Webアプリを構築。}
+            \resumeItem{フロントエンドとPostgreSQLバックエンドを分離したモダンなサーバーレスアーキテクチャを設計。}
+            \resumeItem{安全なユーザー認証を統合し、進捗データ（XP、レベル、グローバルリーダーボード）を管理。}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/NotCatfish/portfolio}{\textbf{個人ポートフォリオ ＆ インタラクティブ履歴書}} $|$ \emph{React.js, Tailwind CSS, Vite} $|$ \href{https://indraneelsamanta.vercel.app/}{\textbf{Live Site}}}{}
+          \resumeItemListStart
+            \resumeItem{英語と日本語のシームレスな切り替えを可能にする動的ローカリゼーション（i18n）を備えたSPAを開発。}
+            \resumeItem{Tailwind CSSを使用して、ダーク/ライトモードやインタラクティブなコンポーネントを備えた完全レスポンシブなUIを設計。}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/NotCatfish/employeeManagementSystem}{\textbf{従業員管理システム}} $|$ \emph{Python, Software Engineering}}{}
+          \resumeItemListStart
+            \resumeItem{従業員レコードのCRUD操作を行うためのモジュール式コマンドラインインターフェース（CLI）をPythonで開発。}
+            \resumeItem{データ検証ロジックと、レコード検索を動的に行うカスタムバブルソートアルゴリズムを実装。}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{職歴}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {人工知能（AI）インターン}{2025年9月 -- 2025年11月}
+      {Acmegrade}{}
+      \resumeItemListStart
+        \resumeItem{独自のデータセットに対して探索的データ分析（EDA）を実施し、ユーザーの行動パターンや傾向を特定。}
+        \resumeItem{過去のリスニングデータに基づき、ユーザーの音楽ジャンルの好みを予測する機械学習分類モデルを設計およびトレーニング。}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Google Developer Student Club (GDSC) DJSCE}{2025年10月 -- 現在}
+      {ロジスティクス・イベント共同委員}{}
+      \resumeItemListStart
+        \resumeItem{200名以上が参加する技術イベントやハッカソンの会場調達およびロジスティクスを管理。}
+        \resumeItem{5名の学生チームを率いて技術イベントの小道具をデザインし、参加者へのメールアウトリーチを実行。}
+      \resumeItemListEnd
+    \resumeSubheading
+      {DJS Impulse}{2025年9月 -- 現在}
+      {構造共同委員}{}
+      \resumeItemListStart
+        \resumeItem{高度なグラスファイバー積層技術を活用し、競技用エンジニアリングプロジェクトのコア構造部品を製作。}
+        \resumeItem{プレゼンテーション用の包括的な技術文書およびエンジニアリングレポートを作成。}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{資格・修了証}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {人工知能（AI）トレーニング}{2025年10月}
+      {Acmegrade (Rendezvous IIT Delhi と提携)}{}
+      \resumeItemListStart
+        \resumeItem{応用AIおよび機械学習の実装に焦点を当てた集中認定プログラムを修了。}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

@@ -58,6 +58,123 @@ export const translations = {
     },
     footer: {
       text: 'DESIGNED WITH 禅 (ZEN) IN MIND'
+    },
+    resume: {
+      name: 'Indraneel Samanta',
+      contact: [
+        { label: '+91 8879163073', href: 'tel:+918879163073' },
+        { label: 'indraneelsamanta2005@gmail.com', href: 'mailto:indraneelsamanta2005@gmail.com' },
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/indraneel-samanta-724782347' },
+        { label: 'GitHub', href: 'https://github.com/NotCatfish' }
+      ],
+      education: {
+        title: 'Education',
+        items: [
+          {
+            school: 'Dwarkadas J. Sanghvi College of Engineering',
+            date: 'Expected Graduation: May 2028',
+            degree: 'Bachelor of Technology in Artificial Intelligence and Machine Learning (AIML)'
+          },
+          {
+            school: 'Thakur College of Science & Commerce',
+            date: 'June 2021 – May 2023',
+            degree: 'Computer Science'
+          }
+        ]
+      },
+      skills: {
+        title: 'Technical Skills',
+        items: [
+          { category: 'Languages', text: 'Python, C, C++, JavaScript, HTML, CSS, SQL' },
+          { category: 'Frameworks & Libraries', text: 'React, Next.js, Tailwind CSS, Pandas, NumPy, Matplotlib, NLTK, TensorRT' },
+          { category: 'Tools & Databases', text: 'Supabase (PostgreSQL), Git, GitHub, VS Code, Antigravity IDE' },
+          { category: 'Methodologies', text: 'AI-Assisted Development, Applied Prompt Engineering, System Design, Data Structures' },
+          { category: 'Spoken Languages', text: 'English, Hindi, Bengali, Japanese (Limited Working), Gujarati, Marathi' }
+        ]
+      },
+      projects: {
+        title: 'Technical Projects',
+        items: [
+          {
+            name: 'Otakufy | Full-Stack Japanese Learning Platform',
+            role: 'Web Development',
+            tech: 'Tech Stack: Next.js, React, Tailwind CSS, Supabase (PostgreSQL), Applied Prompt Engineering',
+            points: [
+              'Architected and developed a comprehensive educational web application designed to help users master Japanese vocabulary, grammar, kanji, and reading comprehension (JLPT N5-N1).',
+              'Built a modern, serverless architecture separating the frontend presentation layer from the backend database, ensuring rapid load times and seamless dynamic data fetching.',
+              'Engineered a highly responsive, animated frontend interface using Next.js and Tailwind CSS, featuring local UI state management, gamified progression systems, and interactive quizzes.',
+              'Integrated Supabase to securely handle user authentication and maintain progression data including user XP, levels, streaks, and global leaderboards.',
+              'Leveraged AI-assisted development and applied prompt engineering to accelerate system design, generate full-stack boilerplate, and debug complex component architecture.'
+            ]
+          },
+          {
+            name: 'Personal Portfolio & Interactive Resume',
+            role: 'Web Development',
+            tech: 'Tech Stack: React.js, Tailwind CSS, Vite, HTML/CSS',
+            points: [
+              'Engineered a single-page application (SPA) portfolio using React.js and Vite to showcase software projects and technical competencies.',
+              'Implemented dynamic localization (i18n) with context-based state management, allowing instant UI toggling between English and Japanese.',
+              'Utilized Tailwind CSS to design a fully responsive, mobile-first interface featuring dynamic dark/light mode theming and interactive components.'
+            ]
+          },
+          {
+            name: 'Employee Management System',
+            role: 'Software Engineering',
+            tech: 'Tech Stack: Python',
+            points: [
+              'Engineered a modular command-line interface (CLI) application in Python to execute CRUD (Create, Read, Delete) operations for employee records.',
+              'Implemented core data validation logic to prevent duplicate primary keys and utilized dictionaries for structured in-memory data storage.',
+              'Designed and integrated a custom sorting algorithm (Bubble Sort) to dynamically organize and retrieve employee records by ID.'
+            ]
+          }
+        ]
+      },
+      experience: {
+        title: 'Experience',
+        items: [
+          {
+            role: 'Artificial Intelligence Intern',
+            company: 'Acmegrade',
+            date: 'Sep 2025 – Nov 2025',
+            points: [
+              'Conducted comprehensive Exploratory Data Analysis (EDA) on proprietary datasets to identify underlying trends and user behavior patterns.',
+              'Engineered data visualization dashboards to present complex analytical insights to stakeholders.',
+              'Designed and trained a predictive Machine Learning classification model to accurately forecast user music genre preferences based on historical listening data.'
+            ]
+          },
+          {
+            role: 'Logistics & Events Co-committee',
+            company: 'Google Developer Student Club (GDSC) DJSCE',
+            date: 'Oct 2025 – Present',
+            points: [
+              'Led a creative team of 5 students in designing and fabricating technical event props for college-wide tech symposiums.',
+              'Managed venue procurement, physical setup, and participant logistics for technical events and hackathons with over 200 attendees.',
+              'Executed participant outreach through email marketing campaigns and direct calls.',
+              'Selected to manage overnight operations during hackathons, overseeing bedding setups, participant decorum, and venue logistics.',
+              'Assisted with initial sponsor outreach and contact.'
+            ]
+          },
+          {
+            role: 'Structures Co-committee',
+            company: 'DJS Impulse',
+            date: 'Sep 2025 – Present',
+            points: [
+              'Fabricated core structural components for competitive engineering projects utilizing advanced fiberglass layup techniques.',
+              'Authored and compiled comprehensive technical documentation and engineering reports, contributing to the team\'s presentation at competitive engineering events.'
+            ]
+          }
+        ]
+      },
+      certifications: {
+        title: 'Certifications',
+        items: [
+          {
+            name: 'Artificial Intelligence Training',
+            date: 'Oct 2025',
+            issuer: 'Acmegrade (Rendezvous IIT Delhi) | Credential ID: AGC25090066'
+          }
+        ]
+      }
     }
   },
   ja: {
@@ -119,6 +236,123 @@ export const translations = {
     },
     footer: {
       text: '禅（ZEN）の心でデザインされました'
+    },
+    resume: {
+      name: 'インドラニール・サマンタ',
+      contact: [
+        { label: '+91 8879163073', href: 'tel:+918879163073' },
+        { label: 'indraneelsamanta2005@gmail.com', href: 'mailto:indraneelsamanta2005@gmail.com' },
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/indraneel-samanta-724782347' },
+        { label: 'GitHub', href: 'https://github.com/NotCatfish' }
+      ],
+      education: {
+        title: '学歴',
+        items: [
+          {
+            school: 'Dwarkadas J. Sanghvi 工科大学 (DJSCE)',
+            date: '卒業予定: 2028年5月',
+            degree: '人工知能・機械学習（AIML）学士課程'
+          },
+          {
+            school: 'Thakur 理系・商学カレッジ',
+            date: '2021年6月 – 2023年5月',
+            degree: 'コンピュータサイエンス'
+          }
+        ]
+      },
+      skills: {
+        title: 'テクニカルスキル',
+        items: [
+          { category: 'プログラミング言語', text: 'Python, C, C++, JavaScript, HTML, CSS, SQL' },
+          { category: 'フレームワークとライブラリ', text: 'React, Next.js, Tailwind CSS, Pandas, NumPy, Matplotlib, NLTK, TensorRT' },
+          { category: 'ツールとデータベース', text: 'Supabase (PostgreSQL), Git, GitHub, VS Code, Antigravity IDE' },
+          { category: '開発手法', text: 'AI-Assisted Development, Applied Prompt Engineering, System Design, Data Structures' },
+          { category: '使用言語', text: '英語、ヒンディー語、ベンガル語、日本語（日常会話）、グジャラート語、マラーティー語' }
+        ]
+      },
+      projects: {
+        title: 'テクニカルプロジェクト',
+        items: [
+          {
+            name: 'Otakufy | フルスタック日本語学習プラットフォーム',
+            role: 'Web開発',
+            tech: '技術スタック: Next.js, React, Tailwind CSS, Supabase (PostgreSQL), Applied Prompt Engineering',
+            points: [
+              '間隔反復アルゴリズムとインタラクティブなクイズを活用した包括的な教育用Webアプリを構築。',
+              'フロントエンドとPostgreSQLバックエンドを分離したモダンなサーバーレスアーキテクチャを設計。',
+              'Tailwind CSSとNext.jsを使用して、ローカルUI状態管理、ゲーミフィケーション、インタラクティブなクイズを備えた完全レスポンシブなフロントエンドを設計。',
+              '安全なユーザー認証を統合し、進捗データ（XP、レベル、グローバルリーダーボード）を管理。',
+              'AIを活用した開発とプロンプトエンジニアリングを駆使して、システム設計と複雑なコンポーネントのデバッグを加速。'
+            ]
+          },
+          {
+            name: '個人ポートフォリオ ＆ インタラクティブ履歴書',
+            role: 'Web開発',
+            tech: '技術スタック: React.js, Tailwind CSS, Vite, HTML/CSS',
+            points: [
+              'React.jsとViteを使用して、ソフトウェアプロジェクトと技術的能力を示すシングルページアプリケーション（SPA）ポートフォリオを開発。',
+              '英語と日本語のシームレスな切り替えを可能にする動的ローカリゼーション（i18n）を備えたSPAを開発。',
+              'Tailwind CSSを使用して、ダーク/ライトモードやインタラクティブなコンポーネントを備えた完全レスポンシブなモバイルファーストUIを設計。'
+            ]
+          },
+          {
+            name: '従業員管理システム',
+            role: 'ソフトウェアエンジニアリング',
+            tech: '技術スタック: Python',
+            points: [
+              '従業員レコードのCRUD操作を行うためのモジュール式コマンドラインインターフェース（CLI）をPythonで開発。',
+              '主キーの重複を防ぐデータ検証ロジックを実装し、構造化されたインメモリデータ保存に辞書を利用。',
+              'レコードを動的に検索・整理するためのカスタムバブルソートアルゴリズムを設計・統合。'
+            ]
+          }
+        ]
+      },
+      experience: {
+        title: '職歴',
+        items: [
+          {
+            role: '人工知能（AI）インターン',
+            company: 'Acmegrade',
+            date: '2025年9月 – 2025年11月',
+            points: [
+              '独自のデータセットに対して探索的データ分析（EDA）を実施し、ユーザーの行動パターンや傾向を特定。',
+              'ステークホルダーに複雑な分析の洞察を提示するためのデータ視覚化ダッシュボードを設計。',
+              '過去のリスニングデータに基づき、ユーザーの音楽ジャンルの好みを予測する機械学習分類モデルを設計およびトレーニング。'
+            ]
+          },
+          {
+            role: 'ロジスティクス・イベント共同委員',
+            company: 'Google Developer Student Club (GDSC) DJSCE',
+            date: '2025年10月 – 現在',
+            points: [
+              '5名の学生チームを率いて技術イベントの小道具をデザインし製作。',
+              '200名以上が参加する技術イベントやハッカソンの会場調達およびロジスティクスを管理。',
+              '参加者へのメールアウトリーチキャンペーンと直接の呼びかけを実行。',
+              'ハッカソン中の夜間業務を管理し、寝具の設定、参加者の規律、会場のロジスティクスを監督。',
+              '初期のスポンサーへのアウトリーチと連絡を支援。'
+            ]
+          },
+          {
+            role: '構造共同委員',
+            company: 'DJS Impulse',
+            date: '2025年9月 – 現在',
+            points: [
+              '高度なグラスファイバー積層技術を活用し、競技用エンジニアリングプロジェクトのコア構造部品を製作。',
+              'プレゼンテーション用の共同作業用の包括的な技術文書およびエンジニアリングレポートを作成。'
+            ]
+          }
+        ]
+      },
+      certifications: {
+        title: '資格・修了証',
+        items: [
+          {
+            name: '人工知能（AI）トレーニング',
+            date: '2025年10月',
+            issuer: 'Acmegrade (Rendezvous IIT Delhi と提携) | Credential ID: AGC25090066'
+          }
+        ]
+      }
     }
   }
 };

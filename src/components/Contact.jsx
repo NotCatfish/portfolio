@@ -1,12 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../LanguageContext';
 import { translations } from '../i18n/translations';
+
+let hasAnimated = false;
 
 export default function Contact() {
   const [status, setStatus] = useState(''); 
   const { lang } = useLanguage();
   const t = translations[lang].contact;
+
+  useEffect(() => {
+    hasAnimated = true;
+  }, []);
 
   const labelClasses = "block font-sans text-xs tracking-widest uppercase mb-2 text-ink-700 dark:text-snow-200";
   const inputClasses = "w-full bg-transparent border-b border-ink-900/20 dark:border-snow-100/20 py-3 focus:outline-none focus:border-sakura transition-colors font-sans";
@@ -39,9 +45,9 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-32 px-6 max-w-5xl mx-auto">
-      <div key={lang}>
+      <div>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={hasAnimated ? false : { opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -58,7 +64,7 @@ export default function Contact() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
+          initial={hasAnimated ? false : { opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
@@ -95,7 +101,7 @@ export default function Contact() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 30 }}
+          initial={hasAnimated ? false : { opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}

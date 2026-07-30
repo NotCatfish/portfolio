@@ -1,6 +1,9 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../LanguageContext';
 import { translations } from '../i18n/translations';
+
+let hasAnimated = false;
 
 const projectImages = [
   'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop', // Terminal/Code for EMS
@@ -11,11 +14,15 @@ export default function Projects() {
   const { lang } = useLanguage();
   const t = translations[lang].projects;
 
+  useEffect(() => {
+    hasAnimated = true;
+  }, []);
+
   return (
     <section id="work" className="py-32 px-6 max-w-7xl mx-auto">
-      <div key={lang}>
+      <div>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={hasAnimated ? false : { opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -32,7 +39,7 @@ export default function Projects() {
             target="_blank"
             rel="noopener noreferrer"
             key={index}
-            initial={{ opacity: 0, y: 30 }}
+            initial={hasAnimated ? false : { opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
