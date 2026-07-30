@@ -86,7 +86,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 1.2 }}
               className="group flex items-center gap-4 font-sans text-sm tracking-widest uppercase text-sakura border border-sakura px-6 py-2 hover:bg-sakura hover:text-snow-100 transition-colors duration-300"
             >
-              <span>{t.downloadResume} (JA)</span>
+              <span>{t.downloadResume} (JP)</span>
             </motion.a>
           </div>
         </div>
