@@ -117,6 +117,7 @@ export const translations = {
               '<strong>Built a full-stack learning platform for all 5 JLPT levels (N5-N1)</strong>, helping users master Japanese vocabulary and kanji through interactive spaced-repetition quizzes.',
               '<strong>Engineered a real-time gamified tracking system</strong> with Supabase (PostgreSQL) to manage user XP, daily streaks, and live global leaderboards.',
               '<strong>Designed a fast, mobile-first interface</strong> using Next.js and Tailwind CSS, focusing on smooth animations and an instant dark/light mode switch.',
+              '<strong>Achieved personal N2/N1 level proficiency</strong> by actively testing and using the platform, fine-tuning the spaced-repetition algorithm to be more accurate than traditional Anki models.',
               '<strong>Sped up the entire development process</strong> by actively using AI-assisted coding and prompt engineering to design the system and fix complex bugs.'
             ]
           },
@@ -300,6 +301,7 @@ export const translations = {
               '<strong>全5レベル（N5〜N1）対応のフルスタック日本語学習プラットフォームを構築:</strong> インタラクティブな間隔反復クイズを通して、単語や漢字の習得をサポート。',
               '<strong>リアルタイムの学習記録システムを開発:</strong> Supabase (PostgreSQL) を導入し、ユーザーの経験値（XP）、連続学習日数、ライブリーダーボードを管理。',
               '<strong>高速でモバイルファーストなUIを設計:</strong> Next.jsとTailwind CSSを活用し、滑らかなアニメーションと瞬時のダーク/ライトモード切り替えを実現。',
+              '<strong>自身でもN2/N1レベルの習熟度を達成:</strong> プラットフォームを継続的にテスト・活用し、従来型のAnkiモデルよりも高精度で効果的な間隔反復アルゴリズムへと改善。',
               '<strong>AIを活用して開発プロセス全体を高速化:</strong> プロンプトエンジニアリングを駆使して、システム設計や複雑なバグ修正を効率的に実施。'
             ]
           },
