@@ -142,9 +142,9 @@ export const translations = {
             company: 'Acmegrade',
             date: 'Sep 2025 – Nov 2025',
             points: [
-              'Conducted comprehensive Exploratory Data Analysis (EDA) on proprietary datasets to identify underlying trends and user behavior patterns.',
-              'Engineered data visualization dashboards to present complex analytical insights to stakeholders.',
-              'Designed and trained a predictive Machine Learning classification model to accurately forecast user music genre preferences based on historical listening data.'
+              '<strong>Extracted actionable user behavior patterns and trends</strong> by conducting comprehensive Exploratory Data Analysis (EDA) on proprietary domain datasets.',
+              '<strong>Engineered interactive data visualization dashboards</strong> to communicate complex quantitative insights and metrics to stakeholders.',
+              '<strong>Developed a predictive classification model</strong> to forecast user genre preferences from historical listening logs, optimizing feature selection and accuracy.'
             ]
           },
           {
@@ -152,11 +152,10 @@ export const translations = {
             company: 'Google Developer Student Club (GDSC) DJSCE',
             date: 'Oct 2025 – Present',
             points: [
-              'Led a creative team of 5 students in designing and fabricating technical event props for college-wide tech symposiums.',
-              'Managed venue procurement, physical setup, and participant logistics for technical events and hackathons with over 200 attendees.',
-              'Executed participant outreach through email marketing campaigns and direct calls.',
-              'Selected to manage overnight operations during hackathons, overseeing bedding setups, participant decorum, and venue logistics.',
-              'Assisted with initial sponsor outreach and contact.'
+              '<strong>Coordinated venue logistics and physical infrastructure for 200+ attendees</strong> during flagship tech symposiums and competitive hackathons.',
+              '<strong>Directed a 5-member creative execution team</strong> to design and fabricate custom technical props for university-wide tech events.',
+              '<strong>Managed overnight hackathon operations</strong>, overseeing participant safety, logistics coordination, and emergency response workflows.',
+              '<strong>Drove participant outreach and sponsor coordination</strong> through targeted email campaigns and direct communications to maximize event turnout.'
             ]
           },
           {
@@ -164,8 +163,8 @@ export const translations = {
             company: 'DJS Impulse',
             date: 'Sep 2025 – Present',
             points: [
-              'Fabricated core structural components for competitive engineering projects utilizing advanced fiberglass layup techniques.',
-              'Authored and compiled comprehensive technical documentation and engineering reports, contributing to the team\'s presentation at competitive engineering events.'
+              '<strong>Fabricated high-tolerance structural components</strong> utilizing advanced fiberglass composite layup techniques for competitive engineering prototypes.',
+              '<strong>Authored comprehensive technical engineering documentation and design reports</strong>, contributing to team presentations at competitive intercollegiate events.'
             ]
           }
         ]
@@ -318,16 +317,16 @@ export const translations = {
         ]
       },
       experience: {
-        title: '職歴',
+        title: '職歴・活動実績',
         items: [
           {
             role: '人工知能（AI）インターン',
             company: 'Acmegrade',
             date: '2025年9月 – 2025年11月',
             points: [
-              '独自のデータセットに対して探索的データ分析（EDA）を実施し、ユーザーの行動パターンや傾向を特定。',
-              'ステークホルダーに複雑な分析の洞察を提示するためのデータ視覚化ダッシュボードを設計。',
-              '過去のリスニングデータに基づき、ユーザーの音楽ジャンルの好みを予測する機械学習分類モデルを設計およびトレーニング。'
+              '<strong>ユーザーの行動パターンや傾向を特定:</strong> 独自データセットに対して包括的な探索的データ分析（EDA）を実施。',
+              '<strong>データ視覚化ダッシュボードを設計・開発:</strong> ステークホルダー向けに複雑な分析結果と定量指標を効果的に提示。',
+              '<strong>音楽ジャンル予測の機械学習分類モデルを構築:</strong> 過去のリスニングログを活用してユーザーの好みを高精度に予測。'
             ]
           },
           {
@@ -335,11 +334,10 @@ export const translations = {
             company: 'Google Developer Student Club (GDSC) DJSCE',
             date: '2025年10月 – 現在',
             points: [
-              '5名の学生チームを率いて技術イベントの小道具をデザインし製作。',
-              '200名以上が参加する技術イベントやハッカソンの会場調達およびロジスティクスを管理。',
-              '参加者へのメールアウトリーチキャンペーンと直接の呼びかけを実行。',
-              'ハッカソン中の夜間業務を管理し、寝具の設定、参加者の規律、会場のロジスティクスを監督。',
-              '初期のスポンサーへのアウトリーチと連絡を支援。'
+              '<strong>200名以上の参加者を対象としたハッカソン運営と会場管理を統括:</strong> 調達、物理インフラ、夜間オペレーションを管理。',
+              '<strong>5名の制作チームを主導:</strong> 学内シンポジウム向けの技術小道具を設計および製作。',
+              '<strong>夜間ハッカソンのオペレーションを監督:</strong> 参加者の安全管理、ロジスティクス連携、緊急時対応を統括。',
+              '<strong>メールキャンペーンと直接アウトリーチを実施:</strong> 参加者登録を促進し、スポンサー企業との連携を支援。'
             ]
           },
           {
@@ -347,8 +345,8 @@ export const translations = {
             company: 'DJS Impulse',
             date: '2025年9月 – 現在',
             points: [
-              '高度なグラスファイバー積層技術を活用し、競技用エンジニアリングプロジェクトのコア構造部品を製作。',
-              'プレゼンテーション用の共同作業用の包括的な技術文書およびエンジニアリングレポートを作成。'
+              '<strong>高精度な構造コンポーネントを製作:</strong> 高度なグラスファイバー積層技術を活用し、競技用プロトタイプを開発。',
+              '<strong>包括的な技術仕様書および設計レポートを作成:</strong> 競技会での審査員向けプレゼンテーションおよび技術検証に貢献。'
             ]
           }
         ]
