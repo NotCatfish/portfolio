@@ -31,7 +31,7 @@ export default function Resume() {
   const t = translations[lang].resume;
 
   return (
-    <div className="pt-32 pb-20 px-6 md:px-12 mx-auto max-w-[900px] font-sans text-black/[0.65] dark:text-white/[0.65] [&_strong]:text-sky-700 dark:[&_strong]:text-sky-100 [&_strong]:font-semibold leading-relaxed">
+    <div className="pt-32 pb-20 px-6 md:px-12 mx-auto max-w-[900px] font-sans text-black/[0.65] dark:text-white/[0.65] [&_strong]:text-cyan-600 dark:[&_strong]:text-cyan-100 [&_strong]:font-semibold leading-relaxed">
       
       {/* 1. Name & Contact */}
       <ProgressiveBlock>
