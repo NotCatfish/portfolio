@@ -138,10 +138,11 @@ export default function Resume() {
           <div key={index}>
             <ProgressiveBlock>
               <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-cyan-600 dark:text-cyan-100">
-                <span>{exp.role}</span>
+                <span className="font-bold">{exp.role}</span>
                 <span className="text-[0.85rem] font-medium text-cyan-600 dark:text-cyan-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{exp.date}</span>
               </h3>
-              <p className="m-0 italic text-[1rem] mb-3">{exp.company}</p>
+              <p className="m-0 italic text-[1rem] mb-1">{exp.company}</p>
+              {exp.tech && <div className="font-medium text-[0.95rem] text-cyan-600 dark:text-cyan-100 mt-1 mb-3">{exp.tech}</div>}
             </ProgressiveBlock>
             <ul className="list-disc pl-6 space-y-2">
               {exp.points.map((point, i) => (

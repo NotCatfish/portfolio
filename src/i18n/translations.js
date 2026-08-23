@@ -141,10 +141,11 @@ export const translations = {
             role: 'Artificial Intelligence Intern',
             company: 'Acmegrade',
             date: 'Sep 2025 – Nov 2025',
+            tech: 'Tech Stack: Python, Pandas, Scikit-Learn, Plotly, Linear Regression',
             points: [
-              '<strong>Analyzed user behavior and listening patterns</strong> by running Exploratory Data Analysis (EDA) with Pandas on large music datasets.',
-              '<strong>Built interactive dashboards</strong> using Plotly to share key user trends and metrics with the team.',
-              '<strong>Trained a machine learning model</strong> to predict music genre preferences based on past user listening history.'
+              '<strong>Conducted Exploratory Data Analysis (EDA) on 50,000+ transactional sales records</strong> to analyze customer purchasing trends, category performance, and seasonal dips.',
+              '<strong>Engineered sales performance metrics and KPI dashboards</strong> using Pandas and Plotly to track monthly category growth rates and profit margins.',
+              '<strong>Trained a predictive regression model</strong> to forecast quarterly product category demand, optimizing inventory planning and minimizing stockouts.'
             ]
           },
           {
@@ -324,10 +325,11 @@ export const translations = {
             role: '人工知能（AI）インターン',
             company: 'Acmegrade',
             date: '2025年9月 – 2025年11月',
+            tech: '技術スタック: Python, Pandas, Scikit-Learn, Plotly, 線形回帰',
             points: [
-              '<strong>ユーザーの行動とリスニング傾向を分析:</strong> Pandasを活用した探索的データ分析（EDA）を実施し、大規模な音楽データを解析。',
-              '<strong>インタラクティブなダッシュボードを構築:</strong> Plotlyを使用して主要なトレンドや指標をチームと共有。',
-              '<strong>音楽ジャンル予測の機械学習モデルを構築:</strong> 過去のリスニング履歴からユーザーの好みを予測するモデルをトレーニング。'
+              '<strong>5万件以上の購買トランザクションデータを対象にEDAを実施:</strong> 顧客の購買傾向、カテゴリー別実績、季節変動を解析。',
+              '<strong>主要KPIおよび売上ダッシュボードを構築:</strong> PandasとPlotlyを活用して月次成長率やカテゴリー別利益率を可視化。',
+              '<strong>四半期ごとの需要予測回帰モデルを構築:</strong> 在庫計画の最適化と品切れリスクの低減を支援する予測モデルをトレーニング。'
             ]
           },
           {
