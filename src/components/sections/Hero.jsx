@@ -39,7 +39,11 @@ export default function Hero() {
           initial={hasAnimated ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-          className={`font-serif ${lang === 'jp' ? 'text-6xl md:text-8xl lg:text-[7.5rem] md:whitespace-nowrap' : 'text-5xl md:text-7xl lg:text-8xl'} font-normal leading-tight tracking-tight mb-8`}
+          className={`font-serif ${
+            lang === 'jp'
+              ? 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem]'
+              : 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.8rem]'
+          } font-normal leading-[1.15] tracking-tight mb-8 max-w-full break-words`}
         >
           {t.tagline1} <span className={`${lang === 'en' ? 'italic' : ''} text-sakura`}>{t.tagline2}</span><span>{t.tagline3}</span>
         </motion.h1>
