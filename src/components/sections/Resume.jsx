@@ -31,7 +31,7 @@ export default function Resume() {
   const t = translations[lang].resume;
 
   return (
-    <div className="pt-32 pb-20 px-6 md:px-12 mx-auto max-w-[900px] font-sans text-black/[0.65] dark:text-white/[0.65] [&_strong]:text-cyan-600 dark:[&_strong]:text-cyan-100 [&_strong]:font-semibold leading-relaxed">
+    <div className="pt-32 pb-20 px-6 md:px-12 mx-auto max-w-[900px] font-sans text-black/[0.65] dark:text-white/[0.65] [&_strong]:text-black/80 dark:[&_strong]:text-white/80 [&_strong]:font-semibold leading-relaxed">
       
       {/* 1. Name & Contact */}
       <ProgressiveBlock>
@@ -60,7 +60,7 @@ export default function Resume() {
       {t.education.items.map((item, index) => (
         <ProgressiveBlock key={index} className="mt-5">
           <div className="mb-6">
-            <h3 className="text-[1.15rem] mb-1.5 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/90 dark:text-white/90">
+            <h3 className="text-[1.15rem] mb-1.5 flex flex-col md:flex-row md:justify-between md:items-baseline text-cyan-600 dark:text-cyan-100">
               <span>{item.school}</span>
               <span className="italic text-[0.95rem] text-black/[0.65] dark:text-white/[0.65] font-normal mt-1 md:mt-0">{item.date}</span>
             </h3>
@@ -97,11 +97,11 @@ export default function Resume() {
         {t.projects.items.map((project, index) => (
           <div key={index}>
             <ProgressiveBlock>
-              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-black/90 dark:text-white/90">
+              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-cyan-600 dark:text-cyan-100">
                 <span className="font-bold">{project.name}</span>
-                <span className="text-[0.85rem] font-medium text-black/90 dark:text-white/90 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap">{project.role}</span>
+                <span className="text-[0.85rem] font-medium text-cyan-600 dark:text-cyan-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap">{project.role}</span>
               </h3>
-              <div className="font-medium text-[0.95rem] text-black/90 dark:text-white/90 mt-2 mb-4">{project.tech}</div>
+              <div className="font-medium text-[0.95rem] text-cyan-600 dark:text-cyan-100 mt-2 mb-4">{project.tech}</div>
             </ProgressiveBlock>
             <ul className="list-disc pl-6 space-y-2">
               {project.points.map((point, i) => (
@@ -125,7 +125,7 @@ export default function Resume() {
         {t.experience.items.map((exp, index) => (
           <div key={index}>
             <ProgressiveBlock>
-              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/90 dark:text-white/90">
+              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-cyan-600 dark:text-cyan-100">
                 <span>{exp.role}</span>
                 <span className="italic text-[0.95rem] text-black/[0.65] dark:text-white/[0.65] font-normal mt-1 md:mt-0">{exp.date}</span>
               </h3>
@@ -152,7 +152,7 @@ export default function Resume() {
       {t.certifications.items.map((cert, index) => (
         <ProgressiveBlock key={index} className="mt-5">
           <div className="mb-8">
-            <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/90 dark:text-white/90">
+            <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-cyan-600 dark:text-cyan-100">
               <span>{cert.name}</span>
               <span className="italic text-[0.95rem] text-black/[0.65] dark:text-white/[0.65] font-normal mt-1 md:mt-0">{cert.date}</span>
             </h3>
