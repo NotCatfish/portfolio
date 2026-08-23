@@ -97,6 +97,7 @@ export const translations = {
         items: [
           {
             name: 'Spotify ML Pipeline & Data Engineering',
+            link: 'https://github.com/NotCatfish/Spotify-Analytics-Pipeline',
             role: 'Data Science & Machine Learning',
             tech: 'Tech Stack: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
@@ -109,6 +110,7 @@ export const translations = {
           },
           {
             name: 'Otakufy | Full-Stack Japanese Learning Platform',
+            link: 'https://github.com/NotCatfish/Otakufy',
             role: 'Web Development',
             tech: 'Tech Stack: Next.js, React, Tailwind CSS, Supabase (PostgreSQL), Applied Prompt Engineering',
             points: [
@@ -121,6 +123,7 @@ export const translations = {
           },
           {
             name: 'Personal Portfolio & Interactive Resume',
+            link: 'https://github.com/NotCatfish/portfolio',
             role: 'Web Development',
             tech: 'Tech Stack: React.js, Tailwind CSS, Vite, HTML/CSS',
             points: [
@@ -277,6 +280,7 @@ export const translations = {
         items: [
           {
             name: 'Spotify MLパイプラインとデータエンジニアリング',
+            link: 'https://github.com/NotCatfish/Spotify-Analytics-Pipeline',
             role: 'データサイエンス・機械学習',
             tech: '技術スタック: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
@@ -289,6 +293,7 @@ export const translations = {
           },
           {
             name: 'Otakufy | フルスタック日本語学習プラットフォーム',
+            link: 'https://github.com/NotCatfish/Otakufy',
             role: 'Web開発',
             tech: '技術スタック: Next.js, React, Tailwind CSS, Supabase (PostgreSQL), Applied Prompt Engineering',
             points: [
@@ -301,6 +306,7 @@ export const translations = {
           },
           {
             name: '個人ポートフォリオ ＆ インタラクティブ履歴書',
+            link: 'https://github.com/NotCatfish/portfolio',
             role: 'Web開発',
             tech: '技術スタック: React.js, Tailwind CSS, Vite, HTML/CSS',
             points: [

@@ -98,7 +98,19 @@ export default function Resume() {
           <div key={index}>
             <ProgressiveBlock>
               <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-cyan-600 dark:text-cyan-100">
-                <span className="font-bold">{project.name}</span>
+                {project.link ? (
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="font-bold inline-flex items-center gap-1.5 hover:text-black dark:hover:text-white hover:underline transition-all group cursor-pointer"
+                  >
+                    <span>{project.name}</span>
+                    <span className="text-[0.85em] opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">↗</span>
+                  </a>
+                ) : (
+                  <span className="font-bold">{project.name}</span>
+                )}
                 <span className="text-[0.85rem] font-medium text-cyan-600 dark:text-cyan-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{project.role}</span>
               </h3>
               <div className="font-medium text-[0.95rem] text-cyan-600 dark:text-cyan-100 mt-2 mb-4">{project.tech}</div>
