@@ -95,8 +95,8 @@ export default function Resume() {
       
       <div className="mt-5 space-y-8">
         {t.projects.items.map((project, index) => (
-          <div key={index}>
-            <ProgressiveBlock>
+          <ProgressiveBlock key={index}>
+            <div>
               <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-amber-700 dark:text-cyan-100">
                 {project.link ? (
                   <a 
@@ -114,15 +114,15 @@ export default function Resume() {
                 <span className="text-[0.85rem] font-medium text-amber-700 dark:text-cyan-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{project.role}</span>
               </h3>
               <div className="font-medium text-[0.95rem] text-amber-700 dark:text-cyan-100 mt-2 mb-4">{project.tech}</div>
-            </ProgressiveBlock>
+            </div>
             <ul className="list-disc pl-6 space-y-2">
               {project.points.map((point, i) => (
-                <ProgressiveBlock key={i} as="li" className="text-[1rem] pl-1">
+                <li key={i} className="text-[1rem] pl-1">
                   <span dangerouslySetInnerHTML={{ __html: point }} />
-                </ProgressiveBlock>
+                </li>
               ))}
             </ul>
-          </div>
+          </ProgressiveBlock>
         ))}
       </div>
 
@@ -135,23 +135,23 @@ export default function Resume() {
       
       <div className="mt-5 space-y-8">
         {t.experience.items.map((exp, index) => (
-          <div key={index}>
-            <ProgressiveBlock>
+          <ProgressiveBlock key={index}>
+            <div>
               <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-amber-700 dark:text-cyan-100">
                 <span className="font-bold">{exp.role}</span>
                 <span className="text-[0.85rem] font-medium text-amber-700 dark:text-cyan-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{exp.date}</span>
               </h3>
               <p className="m-0 italic text-[1rem] mb-1 text-amber-700 dark:text-cyan-100">{exp.company}</p>
               {exp.tech && <div className="font-medium text-[0.95rem] text-amber-700 dark:text-cyan-100 mt-1 mb-3">{exp.tech}</div>}
-            </ProgressiveBlock>
+            </div>
             <ul className="list-disc pl-6 space-y-2">
               {exp.points.map((point, i) => (
-                <ProgressiveBlock key={i} as="li" className="text-[1rem] pl-1">
+                <li key={i} className="text-[1rem] pl-1">
                   <span dangerouslySetInnerHTML={{ __html: point }} />
-                </ProgressiveBlock>
+                </li>
               ))}
             </ul>
-          </div>
+          </ProgressiveBlock>
         ))}
       </div>
 
