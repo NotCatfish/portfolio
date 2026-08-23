@@ -14,7 +14,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative px-6 overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative px-6 overflow-hidden">
       <motion.div 
         key={`kanji-${lang}`}
         initial={hasAnimated ? false : { opacity: 0 }}

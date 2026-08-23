@@ -17,6 +17,14 @@ function App() {
   useEffect(() => {
     document.documentElement.style.scrollBehavior = 'smooth';
 
+    // On page load/refresh, if not on #resume, always start directly at the very top (Hero)
+    if (window.location.hash !== '#resume') {
+      if (window.location.hash) {
+        history.replaceState(null, document.title, window.location.pathname + window.location.search);
+      }
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+
     const handleHashChange = () => {
       const isResume = window.location.hash === '#resume';
       setShowResume(isResume);
@@ -31,7 +39,7 @@ function App() {
     };
   }, []);
 
-  // Instantly position viewport at target section when switching back from resume
+  // Auto-scroll to target section if hash is work or contact when returning from resume
   useEffect(() => {
     if (!showResume && window.location.hash && window.location.hash !== '#resume') {
       const targetId = window.location.hash.replace('#', '');
@@ -62,20 +70,20 @@ function App() {
       setShowResume(true);
       window.location.hash = 'resume';
       window.scrollTo({ top: 0, behavior: 'auto' });
-    } else if (target === 'home' || !target) {
+    } else if (target === 'home' || target === 'about' || !target) {
+      // About or Logo/Home: always scroll directly to the Hero at the top
+      setShowResume(false);
+      history.pushState(null, document.title, window.location.pathname + window.location.search);
       if (showResume) {
-        setShowResume(false);
-        history.pushState(null, document.title, window.location.pathname + window.location.search);
         window.scrollTo({ top: 0, behavior: 'auto' });
       } else {
-        history.pushState(null, document.title, window.location.pathname + window.location.search);
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     } else {
+      // Work or Contact: scroll to target
       if (showResume) {
         setShowResume(false);
         window.location.hash = target;
-        // Position directly without scrolling from top
         const el = document.getElementById(target);
         if (el) {
           document.documentElement.style.scrollBehavior = 'auto';
