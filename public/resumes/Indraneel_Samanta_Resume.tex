@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -20,12 +20,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Adjust margins for guaranteed 1-page fit
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.15in}
 
 \urlstyle{same}
 
@@ -35,7 +35,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
+  \vspace{-7pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Custom commands
@@ -45,60 +45,63 @@
 
 \newcommand{\resumeSubheading}[4]{
   \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\[4pt]
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small#2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{2pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{2pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{2pt}
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \small#2 \\
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=8pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}, itemsep=3pt, parsep=0pt, topsep=2pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=4pt, parsep=0pt, topsep=0pt, partopsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=1.5pt, parsep=0pt, topsep=1.5pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Indraneel Samanta} \\ \vspace{6pt}
-    \small +91 8879163073 $|$ \href{mailto:indraneelsamanta2005@gmail.com}{\underline{indraneelsamanta2005@gmail.com}} $|$ 
+    \textbf{\Huge \scshape Indraneel Samanta} \\ \vspace{3pt}
+    \small +91 8879163073 $|$ 
+    \href{mailto:indraneelsamanta2005@gmail.com}{\underline{indraneelsamanta2005@gmail.com}} $|$ 
     \href{https://linkedin.com/in/indraneel-samanta-724782347}{\underline{LinkedIn}} $|$
-    \href{https://github.com/NotCatfish}{\underline{GitHub}}
+    \href{https://github.com/NotCatfish}{\underline{GitHub}} $|$
+    \href{https://indraneelsamanta.vercel.app/}{\underline{Portfolio}}
 \end{center}
+\vspace{-6pt}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Dwarkadas J. Sanghvi College of Engineering (DJSCE)}{Expected May 2028}
-      {B.Tech in Artificial Intelligence \& Machine Learning (AIML)}{}
+      {Dwarkadas J. Sanghvi College of Engineering (DJSCE)}{Mumbai, India}
+      {B.Tech in Artificial Intelligence \& Machine Learning (AIML)}{2023 -- 2027 (Expected)}
   \resumeSubHeadingListEnd
 
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+%-----------SKILLS & LANGUAGES-----------
+\section{Skills \& Languages}
+ \begin{itemize}[leftmargin=0.12in, label={}, itemsep=2pt, parsep=0pt, topsep=2pt]
     \small{\item{
-     \textbf{Languages}{: Python, C++, SQL, JavaScript, TypeScript} \\[4pt]
-     \textbf{AI/ML \& Data}{: PyTorch, TensorFlow, Scikit-Learn, Pandas, EDA, Predictive Modeling} \\[4pt]
-     \textbf{Web \& Cloud}{: React.js, Next.js, Tailwind CSS, Supabase (PostgreSQL)} \\[4pt]
-     \textbf{Core Concepts}{: System Design, OOP, Data Structures \& Algorithms}
+     \textbf{Programming Languages}{: Python, C, C++, SQL, HTML/CSS, JavaScript, TypeScript} \\[2pt]
+     \textbf{AI/ML \& Data Engineering}{: Pandas, Scikit-Learn, XGBoost, SQLite, EDA, Plotly, Linear Regression} \\[2pt]
+     \textbf{Web \& Databases}{: React.js, Next.js, Tailwind CSS, Supabase (PostgreSQL), Vite, i18n} \\[2pt]
+     \textbf{Spoken Languages}{: English (Fluent), Bengali (Fluent), Hindi (Fluent), Japanese (Conversational), Gujarati/Marathi (Listening)}
     }}
  \end{itemize}
 
@@ -106,23 +109,29 @@
 \section{Technical Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\href{https://github.com/NotCatfish/otakufy}{\textbf{Otakufy $|$ Full-Stack Japanese Learning Platform}} $|$ \emph{Next.js, React, Supabase} $|$ \href{https://otakufy.vercel.app/}{\textbf{Live Site}}}{}
+          {\href{https://github.com/NotCatfish/Spotify-Analytics-Pipeline}{\textbf{Spotify ML Pipeline \& Data Engineering}} $|$ \emph{Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly}}{}
           \resumeItemListStart
-            \resumeItem{Architected a comprehensive educational web app utilizing spaced repetition algorithms and interactive quizzes.}
-            \resumeItem{Built a modern serverless architecture separating the frontend presentation layer from the PostgreSQL backend.}
-            \resumeItem{Integrated secure user authentication and maintained progression data (XP, levels, global leaderboards).}
+            \resumeItem{\textbf{Formulated skip prediction product strategy} to optimize invisible audio caching and reduce streaming bandwidth.}
+            \resumeItem{\textbf{Reduced RAM footprint by 79\% (277MB to 58MB)} by processing raw JSON logs into an optimized SQLite database with downcasting.}
+            \resumeItem{\textbf{Uncovered Concept Drift (skip rates dropping from 31\% to 4\%)} through advanced exploratory data analysis with Pandas and Plotly.}
+            \resumeItem{\textbf{Achieved 0.825 ROC-AUC and 0.74 Precision} using XGBoost with chronologically-engineered ``Micro-Mood'' behavioral features.}
           \resumeItemListEnd
+
       \resumeProjectHeading
-          {\href{https://github.com/NotCatfish/portfolio}{\textbf{Personal Portfolio \& Interactive Resume}} $|$ \emph{React.js, Tailwind CSS, Vite} $|$ \href{https://indraneelsamanta.vercel.app/}{\textbf{Live Site}}}{}
+          {\href{https://github.com/NotCatfish/Otakufy}{\textbf{Otakufy $|$ Full-Stack Japanese Learning Platform}} $|$ \emph{Next.js, React, Tailwind CSS, Supabase (PostgreSQL)}}{Live: \href{https://otakufy.vercel.app/}{\underline{otakufy.vercel.app}}}
           \resumeItemListStart
-            \resumeItem{Engineered a single-page application (SPA) with dynamic localization (i18n) for seamless English/Japanese toggling.}
-            \resumeItem{Utilized Tailwind CSS to design a fully responsive UI featuring dark/light mode theming and interactive components.}
+            \resumeItem{\textbf{Architected a full-stack platform for all 5 JLPT levels (N5--N1)} with a custom spaced-repetition quiz engine.}
+            \resumeItem{\textbf{Engineered real-time state tracking with Supabase (PostgreSQL)} for atomic daily streak validation, XP milestones, and leaderboards.}
+            \resumeItem{\textbf{Optimized quiz load latency to under 100ms} by pre-processing linguistic datasets with Next.js static data fetching.}
+            \resumeItem{\textbf{Boosted personal N2/N1 recall and reading speed} through dynamic review intervals vs. traditional static Anki flashcards.}
           \resumeItemListEnd
+
       \resumeProjectHeading
-          {\href{https://github.com/NotCatfish/employeeManagementSystem}{\textbf{Employee Management System}} $|$ \emph{Python, Software Engineering}}{}
+          {\href{https://github.com/NotCatfish/portfolio}{\textbf{Personal Portfolio \& Interactive Resume}} $|$ \emph{React.js, Tailwind CSS, Vite, i18n}}{Live: \href{https://indraneelsamanta.vercel.app/}{\underline{indraneelsamanta.vercel.app}}}
           \resumeItemListStart
-            \resumeItem{Engineered a modular command-line interface (CLI) in Python for CRUD operations on employee records.}
-            \resumeItem{Implemented core data validation logic and a custom Bubble Sort algorithm for dynamic record retrieval.}
+            \resumeItem{\textbf{Engineered an instant dual-language (i18n) localization engine} using React Context for real-time English/Japanese UI switching.}
+            \resumeItem{\textbf{Achieved sub-second load times and lightweight bundle size} with modern Vite ESM packaging and React 18 architecture.}
+            \resumeItem{\textbf{Built an accessible dark/light theming system} with custom contrast hierarchies and smooth 1.5s cross-fade transitions.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -131,24 +140,29 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Artificial Intelligence Intern}{Sep 2025 -- Nov 2025}
-      {Acmegrade}{}
+      {Acmegrade (E-Commerce Demand Forecasting)}{Tech: Python, Pandas, Scikit-Learn, Plotly}
       \resumeItemListStart
-        \resumeItem{Conducted Exploratory Data Analysis (EDA) on proprietary datasets to identify trends and user behavior patterns.}
-        \resumeItem{Designed and trained a predictive Machine Learning classification model to forecast music genre preferences.}
+        \resumeItem{\textbf{Analyzed 50,000+ transactional sales records} via exploratory data analysis to evaluate category performance and seasonal trends.}
+        \resumeItem{\textbf{Built automated sales KPI dashboards} in Pandas and Plotly to track monthly category growth rates and profit margins.}
+        \resumeItem{\textbf{Trained a predictive regression model} to forecast quarterly product demand, optimizing inventory planning and minimizing stockouts.}
       \resumeItemListEnd
+
     \resumeSubheading
-      {Google Developer Student Club (GDSC) DJSCE}{Oct 2025 -- Present}
-      {Logistics \& Events Co-committee}{}
+      {Logistics \& Events Co-committee}{Oct 2025 -- Present}
+      {Google Developer Student Club (GDSC) DJSCE}{Mumbai, India}
       \resumeItemListStart
-        \resumeItem{Managed venue procurement and logistics for technical events and hackathons with over 200 attendees.}
-        \resumeItem{Led a team of 5 students in designing technical event props and executed participant email outreach.}
+        \resumeItem{\textbf{Managed event logistics and venue setup for 200+ attendees} across collegiate hackathons and tech competitions.}
+        \resumeItem{\textbf{Led a 5-member team} to design and build custom event props, stage setups, and executed participant outreach.}
+        \resumeItem{\textbf{Handled overnight hackathon operations}, coordinating sleeping setups, attendee accommodations, and venue security.}
       \resumeItemListEnd
+
     \resumeSubheading
-      {DJS Impulse}{Sep 2025 -- Present}
-      {Structures Co-committee}{}
+      {Structures Co-committee}{Sep 2025 -- Present}
+      {DJS Impulse}{Mumbai, India}
       \resumeItemListStart
-        \resumeItem{Fabricated core structural components for competitive engineering projects utilizing advanced fiberglass layup techniques.}
-        \resumeItem{Authored comprehensive technical documentation and engineering reports for presentations.}
+        \resumeItem{\textbf{Fabricated structural chassis components} using composite layup and vacuum bagging techniques.}
+        \resumeItem{\textbf{Managed workshop inventory} and coordinated procurement of specialized tools and raw engineering materials.}
+        \resumeItem{\textbf{Created understandable technical presentations for juniors} to accelerate design-to-build onboarding.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -156,11 +170,11 @@
 \section{Certifications}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Artificial Intelligence Training}{Oct 2025}
+      {Duolingo English Test (129/160 -- CEFR C1 Advanced Level)}{Dec 2025}
+      {Duolingo (Official Score Verification)}{}
+    \resumeSubheading
+      {Artificial Intelligence Training Program}{Oct 2025}
       {Acmegrade (in association with Rendezvous IIT Delhi)}{}
-      \resumeItemListStart
-        \resumeItem{Intensive certification program focused on applied Artificial Intelligence and Machine Learning implementations.}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \end{document}
