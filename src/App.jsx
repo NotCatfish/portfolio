@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
 import Projects from './components/sections/Projects';
@@ -20,13 +20,6 @@ function App() {
     const handleHashChange = () => {
       const isResume = window.location.hash === '#resume';
       setShowResume(isResume);
-
-      if (!isResume && window.location.hash) {
-        setTimeout(() => {
-          const el = document.querySelector(window.location.hash);
-          if (el) el.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
     };
 
     window.addEventListener('hashchange', handleHashChange);
@@ -38,14 +31,43 @@ function App() {
     };
   }, []);
 
-  const handleSetShowResume = (val) => {
-    setShowResume(val);
-    if (val) {
+  // Auto-scroll to target section whenever returning to portfolio
+  useEffect(() => {
+    if (!showResume && window.location.hash && window.location.hash !== '#resume') {
+      const targetId = window.location.hash.replace('#', '');
+      const scrollToElement = () => {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+      const t1 = setTimeout(scrollToElement, 50);
+      const t2 = setTimeout(scrollToElement, 150);
+      const t3 = setTimeout(scrollToElement, 300);
+
+      return () => {
+        clearTimeout(t1);
+        clearTimeout(t2);
+        clearTimeout(t3);
+      };
+    }
+  }, [showResume]);
+
+  const navigateTo = (target) => {
+    if (target === 'resume') {
+      setShowResume(true);
       window.location.hash = 'resume';
+    } else if (target === 'home' || !target) {
+      setShowResume(false);
+      history.pushState(null, document.title, window.location.pathname + window.location.search);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      if (window.location.hash === '#resume') {
-        history.pushState("", document.title, window.location.pathname + window.location.search);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      setShowResume(false);
+      window.location.hash = target;
+      const el = document.getElementById(target);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
       }
     }
   };
@@ -53,34 +75,30 @@ function App() {
   return (
     <LanguageProvider>
       <div className="min-h-screen">
-        <Navbar showResume={showResume} setShowResume={handleSetShowResume} />
+        <Navbar showResume={showResume} onNavigate={navigateTo} />
         <main>
-          <AnimatePresence mode="wait">
-            {showResume ? (
-              <motion.div
-                key="resume"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Resume />
-              </motion.div>
-            ) : (
-              <motion.div
-                key="portfolio"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Hero />
-                <About />
-                <Projects />
-                <Contact />
-              </motion.div>
-            )}
-          </AnimatePresence>
+          {showResume ? (
+            <motion.div
+              key="resume"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25 }}
+            >
+              <Resume />
+            </motion.div>
+          ) : (
+            <motion.div
+              key="portfolio"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.25 }}
+            >
+              <Hero />
+              <About />
+              <Projects />
+              <Contact />
+            </motion.div>
+          )}
         </main>
         <Footer />
       </div>
