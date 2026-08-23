@@ -100,10 +100,10 @@ export const translations = {
             role: 'Data Science & Machine Learning',
             tech: 'Tech Stack: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
-              'Architected an end-to-end data pipeline processing raw Spotify listening data into an optimized SQLite database, utilizing data type downcasting to reduce RAM footprint by 79% (277MB to 58MB).',
-              'Conducted advanced EDA using Pandas and Plotly to uncover severe Concept Drift, identifying a dramatic drop in user skip rates from 31% (2021) to 4% (2025).',
-              'Engineered dense "Micro-Mood" behavioral features (e.g., seconds_since_last_skip, rolling skip rates) and applied dynamic target encoding, which accounted for ~70% of the model\'s total predictive power.',
-              'Developed and threshold-tuned an XGBoost classification model with strict chronological windowing, boosting recall from a 0.06 baseline to 0.48, and achieving a final 0.825 ROC-AUC and 0.74 Precision.'
+              'Reduced RAM footprint by 79% (277MB to 58MB) by architecting an end-to-end data pipeline that processed raw Spotify JSON logs into an optimized SQLite database using data type downcasting.',
+              'Uncovered severe Concept Drift (user skip rates dropping from 31% to 4%) by conducting advanced Exploratory Data Analysis (EDA) using Pandas and Plotly.',
+              'Captured ~70% of the model\'s total predictive power by engineering dense "Micro-Mood" behavioral features (e.g., seconds_since_last_skip) and applying dynamic target encoding.',
+              'Achieved a robust 0.825 ROC-AUC and 0.74 Precision, boosting baseline recall from 0.06 to 0.48, by developing and threshold-tuning an XGBoost model with strict chronological windowing.'
             ]
           },
           {
@@ -279,10 +279,10 @@ export const translations = {
             role: 'データサイエンス・機械学習',
             tech: '技術スタック: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
-              '生のSpotify視聴データを最適化されたSQLiteデータベースに処理するエンドツーエンドのデータパイプラインを構築し、データ型のダウンキャストによりRAM使用量を79%（277MBから58MB）削減しました。',
-              'PandasとPlotlyを使用した高度な探索的データ分析（EDA）を実施し、ユーザーのスキップ率が31%（2021年）から4%（2025年）へと劇的に低下する深刻な「コンセプトドリフト」を特定しました。',
-              '「マイクロムード」と呼ばれる密な行動特徴量（例：seconds_since_last_skip、ローリングスキップ率）を設計し、動的ターゲットエンコーディングを適用することで、モデルの予測力の約70%を確保しました。',
-              '厳密な時系列ウィンドウイングを用いたXGBoost分類モデルを開発・しきい値調整し、ベースラインの0.06から0.48へとRecall（再現率）を大幅に向上させ、最終的に0.825のROC-AUCと0.74のPrecision（適合率）を達成しました。'
+              'RAM使用量を79%（277MBから58MB）削減: データ型のダウンキャストを活用し、生のSpotify視聴データを最適化されたSQLiteデータベースに処理するデータパイプラインを構築。',
+              '深刻なコンセプトドリフト（スキップ率が31%から4%へ低下）を発見: PandasとPlotlyを使用した高度な探索的データ分析（EDA）を実施。',
+              'モデル予測力の約70%を確保: 「マイクロムード」と呼ばれる密な行動特徴量（例: seconds_since_last_skip）を設計し、動的ターゲットエンコーディングを適用。',
+              '0.825のROC-AUCと0.74の適合率を達成し、ベースラインの再現率を0.06から0.48へ向上: 厳密な時系列ウィンドウイングを用いてXGBoost分類モデルを開発およびしきい値調整。'
             ]
           },
           {
