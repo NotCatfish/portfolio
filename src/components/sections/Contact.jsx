@@ -108,13 +108,6 @@ export default function Contact() {
           className="flex flex-col justify-center space-y-12 md:pl-12 border-t md:border-t-0 md:border-l border-ink-900/10 dark:border-snow-100/10 pt-12 md:pt-0"
         >
           <div>
-            <h3 className="font-sans text-xs tracking-widest uppercase text-sakura mb-4">{t.directEmail}</h3>
-            <a href="mailto:indraneelsamanta2005@gmail.com" className="font-serif text-xl hover:text-sakura transition-colors break-all">
-              indraneelsamanta2005@gmail.com
-            </a>
-          </div>
-          
-          <div>
             <h3 className="font-sans text-xs tracking-widest uppercase text-sakura mb-4">{t.profNet}</h3>
             <div className="flex flex-col space-y-4 font-sans text-sm tracking-widest uppercase">
               <a href="https://www.linkedin.com/in/indraneel-samanta-724782347" target="_blank" rel="noopener noreferrer" className="hover:text-sakura transition-colors inline-block w-fit">LinkedIn ↗</a>

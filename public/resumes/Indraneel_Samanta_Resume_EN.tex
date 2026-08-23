@@ -1,0 +1,159 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+\definecolor{accent}{HTML}{000000} % Generic Black
+\definecolor{creme}{HTML}{FCFBF7} % Subtle warm off-white
+\pagecolor{creme}
+\usepackage[colorlinks=true, urlcolor=accent, linkcolor=accent, pdfborder={0 0 0}]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{roboto} % Modern sans-serif with massive bold contrast
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for 1-page fit
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.15in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\raggedright\Large\color{accent}
+}{}{0em}{}[\color{accent}\titlerule \vspace{-2pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small#2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \small#2 \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}, itemsep=4pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=2pt, parsep=0pt, topsep=2pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge Indraneel Samanta} \\ \vspace{3pt}
+    \small \href{https://linkedin.com/in/indraneel-samanta-724782347}{LinkedIn} $|$
+    \href{https://github.com/NotCatfish}{GitHub} $|$
+    \href{https://indraneelsamanta.vercel.app/}{Portfolio}
+\end{center}
+\vspace{-6pt}
+
+%-----------SUMMARY-----------
+\section{Objective}
+  \small{Aspiring Software Engineer driven by an insatiable intellectual curiosity and a passion for experimenting with new technologies like AI. Eager to take on challenges, explore unconventional approaches, and co-create innovative, user-centric products. Dedicated to bridging the gap between scalable machine learning systems and seamless full-stack user experiences.}
+\vspace{2pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.djsce.ac.in/}{Dwarkadas J. Sanghvi College of Engineering (DJSCE)}}{Mumbai, India}
+      {B.Tech in Artificial Intelligence \& Machine Learning (AIML)}{2024 -- 2028 (Expected)}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS & LANGUAGES-----------
+\section{Skills \& Languages}
+ \begin{itemize}[leftmargin=0.12in, label={}, itemsep=4pt, parsep=0pt, topsep=4pt]
+    \small{\item{
+     \textbf{Programming \& Databases}{: C, C++, Python, SQLite, PostgreSQL} \\[2pt]
+     \textbf{Data \& ML}{: Pandas, Plotly, Jupyter, Scikit-Learn, XGBoost, EDA, Predictive Modeling, AI Co-creation} \\[2pt]
+     \textbf{Web \& Cloud Tools}{: Next.js, Supabase, Git} \\[2pt]
+     \textbf{Spoken Languages}{: English (Fluent), Japanese (Preparing for N1), Hindi (Fluent), Bengali (Fluent), Gujarati (Listening~Comprehension), Marathi (Listening~Comprehension)}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Technical Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/NotCatfish/Spotify-Analytics-Pipeline}{\textbf{Spotify ML Pipeline \& Data Engineering}} $|$ \emph{Python, Pandas, PostgreSQL, XGBoost, Scikit-Learn}}{}
+          \resumeItemListStart
+            \resumeItem{\textbf{Cut memory usage by 79\% (from 277MB to 58MB)} by building a data pipeline that compresses raw streaming logs into a database.}
+            \resumeItem{\textbf{Created a tool that automatically generates over 60 interactive charts} to instantly show user listening habits without needing any manual setup.}
+            \resumeItem{\textbf{Tracked short-term user habits to help the system quickly adapt} when the number of skipped songs suddenly dropped from \textbf{31\%} to \textbf{4\%}.}
+            \resumeItem{\textbf{Trained a predictive model to identify user skips}, adjusting the system to handle uneven data so it wouldn't just blindly guess "no".}
+            \resumeItem{\textbf{Improved the model's ability to catch skipped songs} by strictly testing it on future timelines, ensuring the system wasn't cheating by looking at past data.}
+            \resumeItem{\textbf{Extracted hidden listening patterns by creating over 40 custom data points} from raw timestamps, such as tracking exactly what time of day a user usually skips songs.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/NotCatfish/Otakufy}{\textbf{Otakufy $|$ Full-Stack Japanese Learning Platform}} $|$ \emph{Next.js, React, Tailwind CSS, Supabase, Vercel}}{Live: \href{https://otakufy.vercel.app/}{\underline{otakufy.vercel.app}}}
+          \resumeItemListStart
+            \resumeItem{\textbf{Delivered lightning-fast quiz load times for all 5 JLPT levels} by building a web app that pre-loads vocabulary data instead of fetching it live.}
+            \resumeItem{\textbf{Built a highly responsive, mobile-like user experience} by integrating a custom flashcard quiz engine directly into the frontend.}
+            \resumeItem{\textbf{Drove user engagement through daily streaks and leaderboards} by adding secure logins and real-time progress tracking.}
+            \resumeItem{\textbf{Rapidly built the entire website from scratch} by directing AI coding assistants based on clear, human-driven instructions.}
+            \resumeItem{\textbf{Ensured a seamless experience across all devices} by designing a mobile-first layout that automatically scales perfectly to tablets and desktop screens.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/NotCatfish/portfolio}{\textbf{Personal Portfolio \& Interactive Resume}} $|$ \emph{React 19, Tailwind CSS v4, Vite, Framer Motion, i18n}}{Live: \href{https://indraneelsamanta.vercel.app/}{\underline{indraneelsamanta.vercel.app}}}
+          \resumeItemListStart
+            \resumeItem{\textbf{Built a fast, responsive personal website using modern tools} with smooth scrolling animations to showcase project work.}
+            \resumeItem{\textbf{Added an instant English-to-Japanese translation switch and a custom dark mode theme} to make the site easy to read for recruiters in Japan.}
+            \resumeItem{\textbf{Set up a working contact form with built-in spam protection} while keeping the underlying code clean and error-free.}
+            \resumeItem{\textbf{Automated the website publishing process} so that any new code updates were instantly and seamlessly pushed to the live site without manual work.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{\textcolor{accent}{Logistics \& Events Co-committee}} $|$ \emph{Google Developer Student Club (GDSC) DJSCE}}{Oct 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Led a 5-member team to coordinate end-to-end event logistics, attendee comfort, and thorough post-event operations for 350+ attendees} during collegiate hackathons, demonstrating strong leadership capabilities.}
+        \resumeItem{\textbf{Reached out to sponsors and participants} through email campaigns and direct calls to boost event sign-ups.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

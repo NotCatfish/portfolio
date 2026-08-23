@@ -46,38 +46,37 @@ export default function About() {
             <div>
               <h4 className="text-sakura tracking-widest text-xs uppercase mb-4">{t.prog}</h4>
               <ul className="space-y-2 text-ink-700 dark:text-snow-200">
-                <li>C, C++</li>
+                <li>SQL (PostgreSQL, SQLite)</li>
                 <li>Python</li>
-                <li>HTML, CSS, SQL</li>
+                <li>JavaScript, C++</li>
               </ul>
             </div>
             
             <div>
               <h4 className="text-sakura tracking-widest text-xs uppercase mb-4">{t.data}</h4>
               <ul className="space-y-2 text-ink-700 dark:text-snow-200">
-                <li>Data Analysis</li>
-                <li>Data Cleaning</li>
-                <li>Data Visualization</li>
+                <li>Pandas, Plotly</li>
+                <li>Jupyter, Scikit-Learn</li>
+                <li>XGBoost</li>
               </ul>
             </div>
 
             <div>
               <h4 className="text-sakura tracking-widest text-xs uppercase mb-4">{t.tools}</h4>
               <ul className="space-y-2 text-ink-700 dark:text-snow-200">
-                <li>GitHub & VS Code</li>
-                <li>Supabase (PostgreSQL)</li>
-                <li>Antigravity IDE</li>
-                <li>AI-Assisted Dev / Prompt Engineering</li>
+                <li>React.js, Tailwind CSS</li>
+                <li>Supabase, Git</li>
+                <li>Linux</li>
               </ul>
             </div>
 
             <div>
               <h4 className="text-sakura tracking-widest text-xs uppercase mb-4">{t.algo}</h4>
               <ul className="space-y-2 text-ink-700 dark:text-snow-200 text-sm md:text-base">
-                <li>React & Next.js</li>
-                <li>Tailwind CSS</li>
-                <li>Pandas & NumPy</li>
-                <li>Matplotlib & NLTK</li>
+                <li>Data Analytics, EDA</li>
+                <li>ETL Pipelines</li>
+                <li>Feature Engineering</li>
+                <li>Predictive Modeling</li>
               </ul>
             </div>
           </div>

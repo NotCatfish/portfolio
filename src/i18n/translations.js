@@ -6,20 +6,20 @@ export const translations = {
       tagline1: 'Building ',
       tagline2: 'strong foundations',
       tagline3: ' in AI.',
-      desc: 'Third-year AI/ML student actively targeting a 2027 tech internship. Combines a solid programming foundation with a focus on mastering Machine Learning and Data Structures.',
+      desc: 'Third-year AI/ML student actively targeting a 2027 tech internship as a Data Engineer, Data Analyst, or ML Engineer. Combines SQL and Python to build end-to-end data pipelines, perform deep data analysis, and train predictive machine learning models.',
       explore: 'Explore Work',
       downloadResume: 'Download Resume'
     },
     about: {
       title: 'Driven by curiosity and logic.',
       p1: 'Currently pursuing my BTech in Artificial Intelligence and Machine Learning at Dwarka Das J Sanghvi College of Engineering (Class of 2028).',
-      p2: 'I combine a solid programming foundation in C, C++, and Python with a strong focus on data structures and machine learning. I am actively building my skills and working on practical projects to secure a tech internship in 2027.',
+      p2: 'I combine SQL and Python to uncover insights through data analysis, engineer robust data pipelines, and develop end-to-end machine learning models. I am actively building my full-stack ML skills and working on practical projects to secure a Data Engineering or ML internship in 2027.',
       quote: '"Artificial intelligence must remain a tool for human empowerment. My goal is to architect highly capable systems that are inherently ethical, secure, and strictly aligned with human well-being."',
       core: 'Technical Skills',
-      prog: 'Programming',
+      prog: 'Languages',
       data: 'Data & Analytics',
-      tools: 'Tools',
-      algo: 'Frameworks & Libraries'
+      tools: 'Web & Tools',
+      algo: 'Methodologies'
     },
     projects: {
       title: 'Selected Work',
@@ -101,11 +101,13 @@ export const translations = {
             role: 'Data Science & Machine Learning',
             tech: 'Tech Stack: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
-              '<strong>Identified significant server cost savings</strong> by formulating a data-driven product strategy that leverages skip prediction to optimize invisible background audio caching and reduce streaming bandwidth.',
-              '<strong>Reduced RAM footprint by 79% (277MB to 58MB)</strong> by architecting an end-to-end data pipeline that processed raw Spotify JSON logs into an optimized SQLite database using data type downcasting.',
-              '<strong>Uncovered severe Concept Drift (user skip rates dropping from 31% to 4%)</strong> by conducting advanced Exploratory Data Analysis (EDA) using Pandas and Plotly.',
-              '<strong>Captured ~70% of the model\'s total predictive power</strong> by engineering dense "Micro-Mood" behavioral features (e.g., seconds_since_last_skip) and applying dynamic target encoding.',
-              '<strong>Achieved a robust 0.825 ROC-AUC and 0.74 Precision, boosting baseline recall from 0.06 to 0.48,</strong> by developing and threshold-tuning an XGBoost model with strict chronological windowing.'
+              '<strong>Cut memory usage by 79% (from 277MB to 58MB)</strong> by building a data pipeline that compresses raw streaming logs into a database.',
+              '<strong>Created a tool that automatically generates over 60 interactive charts</strong> to instantly show user listening habits without needing any manual setup.',
+              '<strong>Tracked short-term user habits to help the system quickly adapt</strong> when the number of skipped songs suddenly dropped from 31% to 4%.',
+              '<strong>Trained a predictive model to identify user skips</strong>, adjusting the system to handle uneven data so it wouldn\'t just blindly guess "no".',
+              '<strong>Improved the model\'s ability to catch skipped songs</strong> by strictly testing it on future timelines, ensuring the system wasn\'t cheating by looking at past data.',
+              '<strong>Extracted hidden listening patterns by creating over 40 custom data points</strong> from raw timestamps, such as tracking exactly what time of day a user usually skips songs.',
+              '<strong>Proposed a way to cut server costs</strong> by using skip predictions to stop caching songs the user is likely to skip, saving streaming bandwidth.'
             ]
           },
           {
@@ -114,10 +116,12 @@ export const translations = {
             role: 'Web Development',
             tech: 'Tech Stack: Next.js, React, Tailwind CSS, Supabase (PostgreSQL)',
             points: [
-              '<strong>Architected a full-stack Japanese learning platform for all 5 JLPT levels (N5–N1)</strong>, integrating a custom spaced-repetition quiz engine with interactive vocabulary, kanji, and grammar modules.',
-              '<strong>Engineered real-time user progression and state tracking</strong> using Supabase (PostgreSQL), designing schemas for atomic daily streak validation, XP milestones, and global leaderboards.',
-              '<strong>Optimized quiz load latency to under 100ms</strong> by pre-processing large linguistic datasets with Next.js static data fetching, reducing redundant backend roundtrips.',
-              '<strong>Validated algorithm efficacy by boosting personal N2/N1 kanji recall and reading speed</strong>, outperforming traditional static Anki flashcard decks through dynamic review intervals.'
+              '<strong>Delivered lightning-fast quiz load times for all 5 JLPT levels</strong> by building a web app that pre-loads vocabulary data instead of fetching it live.',
+              '<strong>Built a highly responsive, mobile-like user experience</strong> by integrating a custom flashcard quiz engine directly into the frontend.',
+              '<strong>Drove user engagement through daily streaks and leaderboards</strong> by adding secure logins and real-time progress tracking.',
+              '<strong>Rapidly built the entire website from scratch</strong> by directing AI coding assistants based on clear, human-driven instructions.',
+              '<strong>Ensured a seamless experience across all devices</strong> by designing a mobile-first layout that automatically scales perfectly to tablets and desktop screens.',
+              '<strong>Proved the effectiveness of the platform</strong> by using it to pass advanced N2/N1 practice exams, learning kanji faster than traditional flashcard apps.'
             ]
           },
           {
@@ -126,9 +130,11 @@ export const translations = {
             role: 'Web Development',
             tech: 'Tech Stack: React.js, Tailwind CSS, Vite, HTML/CSS, i18n',
             points: [
-              '<strong>Engineered an instant dual-language (i18n) localization engine</strong> using React Context, enabling seamless real-time UI switching between English and Japanese.',
-              '<strong>Achieved sub-second load times and optimized bundle size</strong> by architecting a lightweight single-page application (SPA) with React.js and Vite.',
-              '<strong>Built an accessible dark/light theming system</strong> using Tailwind CSS, featuring custom contrast hierarchies and a smooth 1.5s cross-fade transition.'
+              '<strong>Built a fast, responsive personal website using modern tools</strong> with smooth scrolling animations to showcase project work.',
+              '<strong>Added an instant English-to-Japanese translation switch and a custom dark mode theme</strong> to make the site easy to read for recruiters in Japan.',
+              '<strong>Set up a working contact form with built-in spam protection</strong> while keeping the underlying code clean and error-free.',
+              '<strong>Automated the website publishing process</strong> so that any new code updates were instantly and seamlessly pushed to the live site without manual work.',
+              '<strong>Created a highly reusable component architecture</strong>, making it easy to add new projects or skills in the future without touching the core code.'
             ]
           }
         ]
@@ -189,20 +195,20 @@ export const translations = {
       tagline1: 'AIの',
       tagline2: '強固な基盤',
       tagline3: 'を構築する。',
-      desc: '2027年のテックインターンシップを積極的に目指すAI/MLの3年生。確かなプログラミングの基礎と、機械学習およびデータ構造の習得に重点を置いています。',
+      desc: '2027年のデータエンジニア、データアナリスト、またはMLエンジニアのインターンシップを積極的に目指すAI/MLの3年生。SQLとPythonを駆使して、エンドツーエンドのデータパイプライン構築、深いデータ分析、予測機械学習モデルの訓練を行います。',
       explore: '実績を見る',
       downloadResume: '履歴書をダウンロード'
     },
     about: {
       title: '好奇心と論理への探求。',
       p1: '現在、Dwarka Das J Sanghvi College of Engineeringにて人工知能と機械学習のBTechを取得中（2028年卒業予定）。',
-      p2: 'C、C++、Pythonにおける強固なプログラミングの基礎と、データ構造と機械学習への強い焦点を組み合わせています。2027年のテックインターンシップ獲得に向けて、実践的なプロジェクトに取り組みながらスキルを磨いています。',
+      p2: 'SQLとPythonを組み合わせてデータ分析からインサイトを導き出し、堅牢なデータパイプラインを構築し、エンドツーエンドの機械学習モデルを開発しています。2027年のデータエンジニアリングまたはMLインターンシップ獲得に向けて、フルスタックMLスキルを磨きながら実践的なプロジェクトに取り組んでいます。',
       quote: '「人工知能は人類に力を与えるためのツールであり続けなければなりません。私の目標は、本質的に倫理的で安全であり、人類の幸福と厳密に一致した、高度な能力を持つシステムを設計することです。」',
       core: '技術スキル',
-      prog: 'プログラミング',
+      prog: 'プログラミング言語',
       data: 'データと分析',
-      tools: 'ツール',
-      algo: 'フレームワークとライブラリ'
+      tools: 'Webとツール',
+      algo: '方法論'
     },
     projects: {
       title: '厳選された実績',
@@ -284,11 +290,13 @@ export const translations = {
             role: 'データサイエンス・機械学習',
             tech: '技術スタック: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
-              '<strong>大幅なサーバーコスト削減の機会を特定:</strong> スキップ予測を活用してバックグラウンドの音声キャッシュを最適化し、ストリーミング帯域幅を削減するデータ主導のプロダクト戦略を策定。',
-              '<strong>RAM使用量を79%（277MBから58MB）削減:</strong> データ型のダウンキャストを活用し、生のSpotify視聴データを最適化されたSQLiteデータベースに処理するデータパイプラインを構築。',
-              '<strong>深刻なコンセプトドリフト（スキップ率が31%から4%へ低下）を発見:</strong> PandasとPlotlyを使用した高度な探索的データ分析（EDA）を実施。',
-              '<strong>モデル予測力の約70%を確保:</strong> 「マイクロムード」と呼ばれる密な行動特徴量（例: seconds_since_last_skip）を設計し、動的ターゲットエンコーディングを適用。',
-              '<strong>0.825のROC-AUCと0.74の適合率を達成し、ベースラインの再現率を0.06から0.48へ向上:</strong> 厳密な時系列ウィンドウイングを用いてXGBoost分類モデルを開発およびしきい値調整。'
+              '<strong>メモリ使用量を79%（277MBから58MBへ）削減:</strong> 生のストリーミングログをデータベースに圧縮するデータパイプラインを構築。',
+              '<strong>60以上のインタラクティブチャートを自動生成するツールを作成:</strong> 手動設定なしで視聴習慣を即座に表示。',
+              '<strong>短期的なユーザー習慣を追跡:</strong> スキップ率が31%から4%へ急減した際、システムが迅速に適応できるよう支援。',
+              '<strong>スキップを特定する予測モデルを訓練:</strong> 単なる推測を避けるため、不均衡データを処理するようシステムを調整。',
+              '<strong>スキップ曲検出モデルの能力向上:</strong> データ漏洩を防ぐため、将来のタイムラインで厳密にテスト。',
+              '<strong>隠れたリスニングパターンを抽出:</strong> 生のタイムスタンプから40以上のデータポイントを作成（時間帯ごとの傾向など）。',
+              '<strong>サーバーコストを削減する手法を提案:</strong> スキップ予測を活用して、ユーザーがスキップしそうな曲の事前読み込みを停止し、ストリーミング帯域幅を節約。'
             ]
           },
           {
@@ -297,10 +305,12 @@ export const translations = {
             role: 'Web開発',
             tech: '技術スタック: Next.js, React, Tailwind CSS, Supabase (PostgreSQL)',
             points: [
-              '<strong>全5レベル（N5〜N1）対応のフルスタック学習プラットフォームを構築:</strong> 独自の分散学習（Spaced Repetition）クイズエンジンを統合し、語彙・漢字・文法を体系的に学習できる環境を開発。',
-              '<strong>Supabase (PostgreSQL) を用いたリアルタイム進捗追跡システムを開発:</strong> 経験値（XP）や日次ストリーク、グローバルリーダーボードを安全かつ低遅延で管理するデータベース設計を実施。',
-              '<strong>クイズ読み込み時間を100ms未満に最適化:</strong> Next.jsの静的データフェッチを活用して膨大な語学データセットを事前処理し、不要なAPI通信を削減。',
-              '<strong>独自の反復学習アルゴリズムによりN2/N1レベルの漢字想起力・読解力を向上:</strong> 実践的な自己検証を通じて動的インターバルを調整し、静的なAnki型フラッシュカード以上の学習効率を実証。'
+              '<strong>全JLPTレベルで超高速クイズ読込を実現:</strong> 語彙データを動的取得せず事前読込するWebアプリを構築。',
+              '<strong>モバイルライクな高応答性UXを構築:</strong> カスタムフラッシュカードエンジンをフロントエンドに統合。',
+              '<strong>ユーザーエンゲージメントを促進:</strong> 安全なログインと進捗追跡により、連続学習とリーダーボードを提供。',
+              '<strong>Webサイト全体をゼロから迅速に構築:</strong> 明確な指示に基づきAIコーディングアシスタントを活用。',
+              '<strong>全デバイスでシームレスな体験を保証:</strong> タブレットやPCに自動拡張するモバイルファーストなレイアウトを設計。',
+              '<strong>プラットフォームの有効性を実証:</strong> 実際にこのシステムを使用して高度なN2/N1レベルの模擬試験に合格し、従来の単語帳アプリよりも速く漢字を習得。'
             ]
           },
           {
@@ -309,9 +319,11 @@ export const translations = {
             role: 'Web開発',
             tech: '技術スタック: React.js, Tailwind CSS, Vite, HTML/CSS, i18n',
             points: [
-              '<strong>React Contextを用いた瞬時の2言語（日英）動的ローカリゼーション（i18n）を開発:</strong> ページ再読み込みなしでリアルタイムに言語を切り替える状態管理を実装。',
-              '<strong>ViteとReact.jsにより1秒未満の高速読み込みとバンドル最適化を実現:</strong> 軽量なシングルページアプリケーション（SPA）アーキテクチャを構築。',
-              '<strong>Tailwind CSSによる滑らかなダーク/ライトテーマシステムを設計:</strong> 1.5秒のクロスフェードアニメーションと視認性を重視したコントラスト階層を導入。'
+              '<strong>高速でレスポンシブな個人サイトを構築:</strong> スムーズなスクロールアニメーションを備えたモダンなツールを使用。',
+              '<strong>日英翻訳スイッチとカスタムダークモードを追加:</strong> 日本の採用担当者がサイトを読みやすいように設計。',
+              '<strong>実用的なお問い合わせフォームを設置:</strong> スパム対策機能を組み込みつつ、基本コードをクリーンに維持。',
+              '<strong>Webサイト公開プロセスを自動化:</strong> 手作業なしで即座かつシームレスにライブサイトにプッシュされるように設定。',
+              '<strong>再利用可能なコンポーネント設計を構築:</strong> 将来的に新しいプロジェクトやスキルを簡単に追加できるよう、コアコードに触れずに更新可能な構造を作成。'
             ]
           }
         ]

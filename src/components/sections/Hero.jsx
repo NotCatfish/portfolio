@@ -72,8 +72,9 @@ export default function Hero() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <motion.a
-              href="/Indraneel_Samanta_Resume.pdf"
-              download="Indraneel_Samanta_Resume.pdf"
+              href="/resumes/Indraneel_Samanta_Resume_EN.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={hasAnimated ? false : { opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.1 }}
@@ -83,8 +84,9 @@ export default function Hero() {
             </motion.a>
 
             <motion.a
-              href="/Indraneel_Samanta_Resume_JP.pdf"
-              download="Indraneel_Samanta_Resume_JP.pdf"
+              href="/resumes/Indraneel_Samanta_Resume_JP.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={hasAnimated ? false : { opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.2 }}
