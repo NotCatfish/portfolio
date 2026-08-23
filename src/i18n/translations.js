@@ -89,7 +89,7 @@ export const translations = {
           { category: 'Frameworks & Libraries', text: 'Pandas, NumPy, Matplotlib, Plotly, XGBoost, Scikit-Learn' },
           { category: 'Tools & Databases', text: 'PostgreSQL, Supabase, SQLite, Git, GitHub, VS Code, Antigravity IDE' },
           { category: 'Methodologies', text: 'Machine Learning, Data Engineering, Data Structures, Applied Prompt Engineering' },
-          { category: 'Spoken Languages', text: 'English, Hindi, Bengali, Japanese (Limited Working), Gujarati (Comprehension), Marathi (Comprehension)' }
+          { category: 'Spoken Languages', text: 'English, Hindi, Bengali, Japanese (Limited Working), Gujarati (Listening Comprehension), Marathi (Listening Comprehension)' }
         ]
       },
       projects: {
@@ -267,7 +267,7 @@ export const translations = {
           { category: 'フレームワークとライブラリ', text: 'Pandas, NumPy, Matplotlib, Plotly, XGBoost, Scikit-Learn' },
           { category: 'ツールとデータベース', text: 'PostgreSQL, Supabase, SQLite, Git, GitHub, VS Code, Antigravity IDE' },
           { category: '開発手法', text: '機械学習 (Machine Learning), データエンジニアリング, データ構造, Applied Prompt Engineering' },
-          { category: '使用言語', text: '英語、ヒンディー語、ベンガル語、日本語（日常会話）、グジャラート語（聴解・読解）、マラーティー語（聴解・読解）' }
+          { category: '使用言語', text: '英語、ヒンディー語、ベンガル語、日本語（日常会話）、グジャラート語（聴解のみ）、マラーティー語（聴解のみ）' }
         ]
       },
       projects: {
