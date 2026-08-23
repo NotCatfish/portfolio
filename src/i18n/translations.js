@@ -89,7 +89,7 @@ export const translations = {
           { category: 'Data & Analytics', text: 'Pandas, Plotly, Jupyter, Scikit-Learn, XGBoost' },
           { category: 'Web & Tools', text: 'React.js, Tailwind CSS, Supabase, Git, Linux' },
           { category: 'Methodologies', text: 'Data Analytics, Exploratory Data Analysis (EDA), ETL Pipelines, Feature Engineering, Predictive Modeling' },
-          { category: 'Spoken Languages', text: 'English (Fluent), Japanese (Business Level), Hindi (Fluent), Bengali (Listening), Gujarati (Listening), Marathi (Listening)' }
+          { category: 'Spoken Languages', text: 'English (Fluent), Japanese (Conversational), Hindi (Fluent), Bengali (Fluent), Gujarati (Listening), Marathi (Listening)' }
         ]
       },
       projects: {
@@ -269,7 +269,7 @@ export const translations = {
           { category: 'データ・分析', text: 'Pandas, Plotly, Jupyter, Scikit-Learn, XGBoost' },
           { category: 'Web・ツール', text: 'React.js, Tailwind CSS, Supabase, Git, Linux' },
           { category: '方法論', text: 'データ分析, 探索的データ分析 (EDA), ETLパイプライン, 特徴量エンジニアリング, 予測モデリング' },
-          { category: '語学', text: '英語（流暢）, 日本語（ビジネスレベル）, ヒンディー語（流暢）, ベンガル語（聴解）, グジャラート語（聴解）, マラーティー語（聴解）' }
+          { category: '語学', text: '英語（流暢）, 日本語（日常会話）, ヒンディー語（流暢）, ベンガル語（流暢）, グジャラート語（聴解）, マラーティー語（聴解）' }
         ]
       },
       projects: {
