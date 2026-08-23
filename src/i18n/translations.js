@@ -85,11 +85,11 @@ export const translations = {
       skills: {
         title: 'Technical Skills',
         items: [
-          { category: 'Languages', text: 'Python, C, C++, SQL' },
-          { category: 'Frameworks & Libraries', text: 'Pandas, NumPy, Matplotlib, Plotly, XGBoost, Scikit-Learn' },
-          { category: 'Tools & Databases', text: 'PostgreSQL, Supabase, SQLite, Git, GitHub, VS Code, Antigravity IDE' },
-          { category: 'Methodologies', text: 'Machine Learning, Data Engineering, Data Structures, Applied Prompt Engineering' },
-          { category: 'Spoken Languages', text: 'English, Hindi, Bengali, Japanese (Limited Working), Gujarati (Listening Comprehension), Marathi (Listening Comprehension)' }
+          { category: 'Languages', text: 'SQL (PostgreSQL, SQLite), Python, JavaScript, C++' },
+          { category: 'Data & Analytics', text: 'Pandas, Plotly, Jupyter, Scikit-Learn, XGBoost' },
+          { category: 'Web & Tools', text: 'React.js, Tailwind CSS, Supabase, Git, Linux' },
+          { category: 'Methodologies', text: 'Data Analytics, Exploratory Data Analysis (EDA), ETL Pipelines, Feature Engineering, Predictive Modeling' },
+          { category: 'Spoken Languages', text: 'English (Fluent), Japanese (JLPT N4, Listening Comprehension), Hindi (Fluent), Bengali (Listening), Gujarati (Listening), Marathi (Listening)' }
         ]
       },
       projects: {
@@ -265,11 +265,11 @@ export const translations = {
       skills: {
         title: 'テクニカルスキル',
         items: [
-          { category: 'プログラミング言語', text: 'Python, C, C++, SQL' },
-          { category: 'フレームワークとライブラリ', text: 'Pandas, NumPy, Matplotlib, Plotly, XGBoost, Scikit-Learn' },
-          { category: 'ツールとデータベース', text: 'PostgreSQL, Supabase, SQLite, Git, GitHub, VS Code, Antigravity IDE' },
-          { category: '開発手法', text: '機械学習 (Machine Learning), データエンジニアリング, データ構造, Applied Prompt Engineering' },
-          { category: '使用言語', text: '英語、ヒンディー語、ベンガル語、日本語（日常会話）、グジャラート語（聴解のみ）、マラーティー語（聴解のみ）' }
+          { category: 'プログラミング言語', text: 'SQL (PostgreSQL, SQLite), Python, JavaScript, C++' },
+          { category: 'データ・分析', text: 'Pandas, Plotly, Jupyter, Scikit-Learn, XGBoost' },
+          { category: 'Web・ツール', text: 'React.js, Tailwind CSS, Supabase, Git, Linux' },
+          { category: '方法論', text: 'データ分析, 探索的データ分析 (EDA), ETLパイプライン, 特徴量エンジニアリング, 予測モデリング' },
+          { category: '語学', text: '英語（流暢）, 日本語（JLPT N4, 聴解のみ）, ヒンディー語（流暢）, ベンガル語（聴解）, グジャラート語（聴解）, マラーティー語（聴解）' }
         ]
       },
       projects: {
