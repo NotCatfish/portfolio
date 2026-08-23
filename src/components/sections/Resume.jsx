@@ -38,13 +38,13 @@ export default function Resume() {
         <h1 className="text-[2.2rem] md:text-[3rem] font-bold tracking-tight mb-2 uppercase text-black dark:text-white">
           {t.name}
         </h1>
-        <div className="flex flex-wrap items-center gap-x-2 text-[0.95rem] text-black/[0.67] dark:text-white/[0.67]">
+        <div className="flex flex-wrap items-center gap-x-2 text-[0.95rem] text-cyan-600 dark:text-cyan-100 font-medium">
           {t.contact.map((item, index) => (
             <React.Fragment key={index}>
-              <a href={item.href} className="hover:text-black dark:hover:text-white transition-colors">
+              <a href={item.href} className="hover:underline hover:opacity-80 transition-opacity">
                 {item.label}
               </a>
-              {index < t.contact.length - 1 && <span> | </span>}
+              {index < t.contact.length - 1 && <span className="opacity-40"> | </span>}
             </React.Fragment>
           ))}
         </div>
@@ -79,11 +79,8 @@ export default function Resume() {
       <ProgressiveBlock className="mt-5">
         <ul className="list-none p-0 m-0 space-y-3">
           {t.skills.items.map((skill, index) => (
-            <li key={index} className="text-[1rem] leading-relaxed">
-              <span className="inline-block text-[0.85rem] font-medium text-cyan-600 dark:text-cyan-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full whitespace-nowrap mr-2.5 mb-1">
-                {skill.category}
-              </span>
-              <span>{skill.text}</span>
+            <li key={index} className="text-[1rem]">
+              <strong>{skill.category}:</strong> {skill.text}
             </li>
           ))}
         </ul>
