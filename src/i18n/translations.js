@@ -83,7 +83,7 @@ export const translations = {
         ]
       },
       skills: {
-        title: 'Technical Skills',
+        title: 'Skills & Languages',
         items: [
           { category: 'Languages', text: 'SQL (PostgreSQL, SQLite), Python, JavaScript, C++' },
           { category: 'Data & Analytics', text: 'Pandas, Plotly, Jupyter, Scikit-Learn, XGBoost' },
@@ -267,7 +267,7 @@ export const translations = {
         ]
       },
       skills: {
-        title: 'テクニカルスキル',
+        title: 'スキル・語学',
         items: [
           { category: 'プログラミング言語', text: 'SQL (PostgreSQL, SQLite), Python, JavaScript, C++' },
           { category: 'データ・分析', text: 'Pandas, Plotly, Jupyter, Scikit-Learn, XGBoost' },

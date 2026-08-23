@@ -80,7 +80,7 @@ export default function Resume() {
         <ul className="list-none p-0 m-0 space-y-3">
           {t.skills.items.map((skill, index) => (
             <li key={index} className="text-[1rem]">
-              <strong>{skill.category}:</strong> {skill.text}
+              <strong className="text-cyan-600 dark:text-cyan-100 font-semibold">{skill.category}:</strong> {skill.text}
             </li>
           ))}
         </ul>
