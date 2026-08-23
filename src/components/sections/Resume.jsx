@@ -97,11 +97,11 @@ export default function Resume() {
         {t.projects.items.map((project, index) => (
           <div key={index}>
             <ProgressiveBlock>
-              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-[#1a1a1a] dark:text-[#fff]">
-                <span>{project.name}</span>
-                <span className="italic text-[0.95rem] text-[#555] dark:text-[#ccc] font-normal mt-1 md:mt-0">{project.role}</span>
+              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-[#1a1a1a] dark:text-[#fff]">
+                <span className="font-bold">{project.name}</span>
+                <span className="text-[0.85rem] font-medium text-neutral-700 dark:text-neutral-300 bg-neutral-200 dark:bg-neutral-800 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap">{project.role}</span>
               </h3>
-              <div className="font-semibold text-[0.95rem] text-[#333] dark:text-[#ccc] mt-2 mb-3">{project.tech}</div>
+              <div className="font-medium text-[0.95rem] text-neutral-900 dark:text-neutral-100 mt-2 mb-4">{project.tech}</div>
             </ProgressiveBlock>
             <ul className="list-disc pl-6 space-y-2">
               {project.points.map((point, i) => (
