@@ -141,7 +141,7 @@ export default function Resume() {
                 <span className="font-bold">{exp.role}</span>
                 <span className="text-[0.85rem] font-medium text-cyan-600 dark:text-cyan-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{exp.date}</span>
               </h3>
-              <p className="m-0 italic text-[1rem] mb-1">{exp.company}</p>
+              <p className="m-0 italic text-[1rem] mb-1 text-cyan-600 dark:text-cyan-100">{exp.company}</p>
               {exp.tech && <div className="font-medium text-[0.95rem] text-cyan-600 dark:text-cyan-100 mt-1 mb-3">{exp.tech}</div>}
             </ProgressiveBlock>
             <ul className="list-disc pl-6 space-y-2">
@@ -169,7 +169,7 @@ export default function Resume() {
               <span>{cert.name}</span>
               <span className="text-[0.85rem] font-medium text-cyan-600 dark:text-cyan-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{cert.date}</span>
             </h3>
-            <p className="m-0 text-[1rem]">{cert.issuer}</p>
+            <p className="m-0 text-[1rem] text-cyan-600 dark:text-cyan-100">{cert.issuer}</p>
           </div>
         </ProgressiveBlock>
       ))}
