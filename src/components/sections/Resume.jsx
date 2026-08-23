@@ -38,7 +38,7 @@ export default function Resume() {
         <h1 className="text-[2.2rem] md:text-[3rem] font-bold tracking-tight mb-2 uppercase text-black dark:text-white">
           {t.name}
         </h1>
-        <div className="flex flex-wrap items-center gap-x-2 text-[0.95rem] text-amber-700 dark:text-amber-50/90 font-medium">
+        <div className="flex flex-wrap items-center gap-x-2 text-[0.95rem] text-amber-700 dark:text-yellow-100 font-medium">
           {t.contact.map((item, index) => (
             <React.Fragment key={index}>
               <a href={item.href} className="hover:underline hover:opacity-80 transition-opacity">
@@ -60,9 +60,9 @@ export default function Resume() {
       {t.education.items.map((item, index) => (
         <ProgressiveBlock key={index} className="mt-5">
           <div className="mb-6">
-            <h3 className="text-[1.15rem] mb-1.5 flex flex-col md:flex-row md:justify-between md:items-center text-amber-700 dark:text-amber-50/90">
+            <h3 className="text-[1.15rem] mb-1.5 flex flex-col md:flex-row md:justify-between md:items-center text-amber-700 dark:text-yellow-100">
               <span>{item.school}</span>
-              <span className="text-[0.85rem] font-medium text-amber-700 dark:text-amber-50/90 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{item.date}</span>
+              <span className="text-[0.85rem] font-medium text-amber-700 dark:text-yellow-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{item.date}</span>
             </h3>
             <p className="m-0 text-[1rem]">{item.degree}</p>
           </div>
@@ -80,7 +80,7 @@ export default function Resume() {
         <ul className="list-none p-0 m-0 space-y-3">
           {t.skills.items.map((skill, index) => (
             <li key={index} className="text-[1rem]">
-              <span className="text-amber-700 dark:text-amber-50/90 font-semibold">{skill.category}:</span> {skill.text}
+              <span className="text-amber-700 dark:text-yellow-100 font-semibold">{skill.category}:</span> {skill.text}
             </li>
           ))}
         </ul>
@@ -97,7 +97,7 @@ export default function Resume() {
         {t.projects.items.map((project, index) => (
           <div key={index}>
             <ProgressiveBlock>
-              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-amber-700 dark:text-amber-50/90">
+              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-amber-700 dark:text-yellow-100">
                 {project.link ? (
                   <a 
                     href={project.link} 
@@ -111,9 +111,9 @@ export default function Resume() {
                 ) : (
                   <span className="font-bold">{project.name}</span>
                 )}
-                <span className="text-[0.85rem] font-medium text-amber-700 dark:text-amber-50/90 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{project.role}</span>
+                <span className="text-[0.85rem] font-medium text-amber-700 dark:text-yellow-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{project.role}</span>
               </h3>
-              <div className="font-medium text-[0.95rem] text-amber-700 dark:text-amber-50/90 mt-2 mb-4">{project.tech}</div>
+              <div className="font-medium text-[0.95rem] text-amber-700 dark:text-yellow-100 mt-2 mb-4">{project.tech}</div>
             </ProgressiveBlock>
             <ul className="list-disc pl-6 space-y-2">
               {project.points.map((point, i) => (
@@ -137,12 +137,12 @@ export default function Resume() {
         {t.experience.items.map((exp, index) => (
           <div key={index}>
             <ProgressiveBlock>
-              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-amber-700 dark:text-amber-50/90">
+              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-amber-700 dark:text-yellow-100">
                 <span className="font-bold">{exp.role}</span>
-                <span className="text-[0.85rem] font-medium text-amber-700 dark:text-amber-50/90 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{exp.date}</span>
+                <span className="text-[0.85rem] font-medium text-amber-700 dark:text-yellow-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{exp.date}</span>
               </h3>
-              <p className="m-0 italic text-[1rem] mb-1 text-amber-700 dark:text-amber-50/90">{exp.company}</p>
-              {exp.tech && <div className="font-medium text-[0.95rem] text-amber-700 dark:text-amber-50/90 mt-1 mb-3">{exp.tech}</div>}
+              <p className="m-0 italic text-[1rem] mb-1 text-amber-700 dark:text-yellow-100">{exp.company}</p>
+              {exp.tech && <div className="font-medium text-[0.95rem] text-amber-700 dark:text-yellow-100 mt-1 mb-3">{exp.tech}</div>}
             </ProgressiveBlock>
             <ul className="list-disc pl-6 space-y-2">
               {exp.points.map((point, i) => (
@@ -165,9 +165,9 @@ export default function Resume() {
       {t.certifications.items.map((cert, index) => (
         <ProgressiveBlock key={index} className="mt-5">
           <div className="mb-8">
-            <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-amber-700 dark:text-amber-50/90">
+            <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-amber-700 dark:text-yellow-100">
               <span>{cert.name}</span>
-              <span className="text-[0.85rem] font-medium text-amber-700 dark:text-amber-50/90 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{cert.date}</span>
+              <span className="text-[0.85rem] font-medium text-amber-700 dark:text-yellow-100 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap self-start md:self-auto">{cert.date}</span>
             </h3>
             <p className="m-0 text-[1rem] text-black/[0.85] dark:text-white/[0.85]">{cert.issuer}</p>
           </div>
