@@ -96,6 +96,16 @@ export const translations = {
         title: 'Technical Projects',
         items: [
           {
+            name: 'Spotify ML Pipeline & Data Engineering',
+            role: 'Data Science & Machine Learning',
+            tech: 'Tech Stack: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
+            points: [
+              'Engineered an end-to-end data pipeline processing raw Spotify listening data into a structured SQLite database for robust querying.',
+              'Conducted comprehensive Exploratory Data Analysis (EDA) using Pandas and Plotly to uncover listening trends and user engagement patterns.',
+              'Developed and optimized an XGBoost classification model utilizing Scikit-Learn pipelines and hyperparameter tuning to accurately predict track skip behavior.'
+            ]
+          },
+          {
             name: 'Otakufy | Full-Stack Japanese Learning Platform',
             role: 'Web Development',
             tech: 'Tech Stack: Next.js, React, Tailwind CSS, Supabase (PostgreSQL), Applied Prompt Engineering',
@@ -115,16 +125,6 @@ export const translations = {
               'Engineered a single-page application (SPA) portfolio using React.js and Vite to showcase software projects and technical competencies.',
               'Implemented dynamic localization (i18n) with context-based state management, allowing instant UI toggling between English and Japanese.',
               'Utilized Tailwind CSS to design a fully responsive, mobile-first interface featuring dynamic dark/light mode theming and interactive components.'
-            ]
-          },
-          {
-            name: 'Spotify ML Pipeline & Data Engineering',
-            role: 'Data Science & Machine Learning',
-            tech: 'Tech Stack: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
-            points: [
-              'Engineered an end-to-end data pipeline processing raw Spotify listening data into a structured SQLite database for robust querying.',
-              'Conducted comprehensive Exploratory Data Analysis (EDA) using Pandas and Plotly to uncover listening trends and user engagement patterns.',
-              'Developed and optimized an XGBoost classification model utilizing Scikit-Learn pipelines and hyperparameter tuning to accurately predict track skip behavior.'
             ]
           }
         ]
@@ -274,6 +274,16 @@ export const translations = {
         title: 'テクニカルプロジェクト',
         items: [
           {
+            name: 'Spotify MLパイプラインとデータエンジニアリング',
+            role: 'データサイエンス・機械学習',
+            tech: '技術スタック: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
+            points: [
+              '生のSpotify視聴データを構造化されたSQLiteデータベースに処理するデータパイプラインを設計し、堅牢なクエリを可能にしました。',
+              'PandasとPlotlyを使用して包括的な探索的データ分析（EDA）を実施し、視聴傾向とユーザーエンゲージメントパターンを明らかにしました。',
+              'Scikit-Learnパイプラインとハイパーパラメータチューニングを利用してXGBoost分類モデルを開発・最適化し、曲のスキップ行動を正確に予測しました。'
+            ]
+          },
+          {
             name: 'Otakufy | フルスタック日本語学習プラットフォーム',
             role: 'Web開発',
             tech: '技術スタック: Next.js, React, Tailwind CSS, Supabase (PostgreSQL), Applied Prompt Engineering',
@@ -293,16 +303,6 @@ export const translations = {
               'React.jsとViteを使用して、ソフトウェアプロジェクトと技術的能力を示すシングルページアプリケーション（SPA）ポートフォリオを開発。',
               '英語と日本語のシームレスな切り替えを可能にする動的ローカリゼーション（i18n）を備えたSPAを開発。',
               'Tailwind CSSを使用して、ダーク/ライトモードやインタラクティブなコンポーネントを備えた完全レスポンシブなモバイルファーストUIを設計。'
-            ]
-          },
-          {
-            name: 'Spotify MLパイプラインとデータエンジニアリング',
-            role: 'データサイエンス・機械学習',
-            tech: '技術スタック: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
-            points: [
-              '生のSpotify視聴データを構造化されたSQLiteデータベースに処理するデータパイプラインを設計し、堅牢なクエリを可能にしました。',
-              'PandasとPlotlyを使用して包括的な探索的データ分析（EDA）を実施し、視聴傾向とユーザーエンゲージメントパターンを明らかにしました。',
-              'Scikit-Learnパイプラインとハイパーパラメータチューニングを利用してXGBoost分類モデルを開発・最適化し、曲のスキップ行動を正確に予測しました。'
             ]
           }
         ]
