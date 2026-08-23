@@ -105,9 +105,7 @@ export default function Resume() {
             </ProgressiveBlock>
             <ul className="list-disc pl-6 space-y-2">
               {project.points.map((point, i) => (
-                <ProgressiveBlock key={i} as="li" className="text-[1rem] pl-1">
-                  {point}
-                </ProgressiveBlock>
+                <ProgressiveBlock key={i} as="li" className="text-[1rem] pl-1" dangerouslySetInnerHTML={{ __html: point }} />
               ))}
             </ul>
           </div>
@@ -133,9 +131,7 @@ export default function Resume() {
             </ProgressiveBlock>
             <ul className="list-disc pl-6 space-y-2">
               {exp.points.map((point, i) => (
-                <ProgressiveBlock key={i} as="li" className="text-[1rem] pl-1">
-                  {point}
-                </ProgressiveBlock>
+                <ProgressiveBlock key={i} as="li" className="text-[1rem] pl-1" dangerouslySetInnerHTML={{ __html: point }} />
               ))}
             </ul>
           </div>
