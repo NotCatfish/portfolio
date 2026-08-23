@@ -31,17 +31,17 @@ export default function Resume() {
   const t = translations[lang].resume;
 
   return (
-    <div className="pt-32 pb-20 px-6 md:px-12 mx-auto max-w-[900px] font-sans text-neutral-700 dark:text-neutral-400 [&_strong]:text-neutral-800 dark:[&_strong]:text-neutral-200 [&_strong]:font-semibold leading-relaxed">
+    <div className="pt-32 pb-20 px-6 md:px-12 mx-auto max-w-[900px] font-sans text-black/60 dark:text-white/30 [&_strong]:text-black/80 dark:[&_strong]:text-white/50 [&_strong]:font-semibold leading-relaxed">
       
       {/* 1. Name & Contact */}
       <ProgressiveBlock>
-        <h1 className="text-[2.2rem] md:text-[3rem] font-bold tracking-tight mb-2 uppercase text-[#1a1a1a] dark:text-[#fff]">
+        <h1 className="text-[2.2rem] md:text-[3rem] font-bold tracking-tight mb-2 uppercase text-black dark:text-white">
           {t.name}
         </h1>
-        <div className="flex flex-wrap items-center gap-x-2 text-[0.95rem] text-[#555] dark:text-[#ccc]">
+        <div className="flex flex-wrap items-center gap-x-2 text-[0.95rem] text-black/60 dark:text-white/40">
           {t.contact.map((item, index) => (
             <React.Fragment key={index}>
-              <a href={item.href} className="hover:text-[#1a1a1a] dark:hover:text-[#fff] transition-colors">
+              <a href={item.href} className="hover:text-black dark:hover:text-white transition-colors">
                 {item.label}
               </a>
               {index < t.contact.length - 1 && <span> | </span>}
@@ -52,7 +52,7 @@ export default function Resume() {
 
       {/* 2. Education */}
       <ProgressiveBlock>
-        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-neutral-900 dark:text-neutral-100">
+        <h2 className="text-[1.4rem] border-b-2 border-black/20 dark:border-white/20 pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-black dark:text-white">
           {t.education.title}
         </h2>
       </ProgressiveBlock>
@@ -60,9 +60,9 @@ export default function Resume() {
       {t.education.items.map((item, index) => (
         <ProgressiveBlock key={index} className="mt-5">
           <div className="mb-6">
-            <h3 className="text-[1.15rem] mb-1.5 flex flex-col md:flex-row md:justify-between md:items-baseline text-[#1a1a1a] dark:text-[#fff]">
+            <h3 className="text-[1.15rem] mb-1.5 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/80 dark:text-white/80">
               <span>{item.school}</span>
-              <span className="italic text-[0.95rem] text-[#555] dark:text-[#ccc] font-normal mt-1 md:mt-0">{item.date}</span>
+              <span className="italic text-[0.95rem] text-black/60 dark:text-white/40 font-normal mt-1 md:mt-0">{item.date}</span>
             </h3>
             <p className="m-0 text-[1rem]">{item.degree}</p>
           </div>
@@ -71,7 +71,7 @@ export default function Resume() {
 
       {/* 3. Technical Skills */}
       <ProgressiveBlock>
-        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-neutral-900 dark:text-neutral-100">
+        <h2 className="text-[1.4rem] border-b-2 border-black/20 dark:border-white/20 pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-black dark:text-white">
           {t.skills.title}
         </h2>
       </ProgressiveBlock>
@@ -88,7 +88,7 @@ export default function Resume() {
 
       {/* 4. Technical Projects */}
       <ProgressiveBlock>
-        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-neutral-900 dark:text-neutral-100">
+        <h2 className="text-[1.4rem] border-b-2 border-black/20 dark:border-white/20 pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-black dark:text-white">
           {t.projects.title}
         </h2>
       </ProgressiveBlock>
@@ -97,11 +97,11 @@ export default function Resume() {
         {t.projects.items.map((project, index) => (
           <div key={index}>
             <ProgressiveBlock>
-              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-[#1a1a1a] dark:text-[#fff]">
+              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-black/80 dark:text-white/80">
                 <span className="font-bold">{project.name}</span>
-                <span className="text-[0.85rem] font-medium text-neutral-700 dark:text-neutral-300 bg-neutral-200 dark:bg-neutral-800 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap">{project.role}</span>
+                <span className="text-[0.85rem] font-medium text-black/80 dark:text-white/80 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap">{project.role}</span>
               </h3>
-              <div className="font-medium text-[0.95rem] text-neutral-900 dark:text-neutral-100 mt-2 mb-4">{project.tech}</div>
+              <div className="font-medium text-[0.95rem] text-black/80 dark:text-white/80 mt-2 mb-4">{project.tech}</div>
             </ProgressiveBlock>
             <ul className="list-disc pl-6 space-y-2">
               {project.points.map((point, i) => (
@@ -116,7 +116,7 @@ export default function Resume() {
 
       {/* 5. Experience */}
       <ProgressiveBlock>
-        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-neutral-900 dark:text-neutral-100">
+        <h2 className="text-[1.4rem] border-b-2 border-black/20 dark:border-white/20 pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-black dark:text-white">
           {t.experience.title}
         </h2>
       </ProgressiveBlock>
@@ -125,9 +125,9 @@ export default function Resume() {
         {t.experience.items.map((exp, index) => (
           <div key={index}>
             <ProgressiveBlock>
-              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-[#1a1a1a] dark:text-[#fff]">
+              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/80 dark:text-white/80">
                 <span>{exp.role}</span>
-                <span className="italic text-[0.95rem] text-[#555] dark:text-[#ccc] font-normal mt-1 md:mt-0">{exp.date}</span>
+                <span className="italic text-[0.95rem] text-black/60 dark:text-white/40 font-normal mt-1 md:mt-0">{exp.date}</span>
               </h3>
               <p className="m-0 italic text-[1rem] mb-3">{exp.company}</p>
             </ProgressiveBlock>
@@ -144,7 +144,7 @@ export default function Resume() {
 
       {/* 6. Certifications */}
       <ProgressiveBlock>
-        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-neutral-900 dark:text-neutral-100">
+        <h2 className="text-[1.4rem] border-b-2 border-black/20 dark:border-white/20 pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-black dark:text-white">
           {t.certifications.title}
         </h2>
       </ProgressiveBlock>
@@ -152,9 +152,9 @@ export default function Resume() {
       {t.certifications.items.map((cert, index) => (
         <ProgressiveBlock key={index} className="mt-5">
           <div className="mb-8">
-            <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-[#1a1a1a] dark:text-[#fff]">
+            <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/80 dark:text-white/80">
               <span>{cert.name}</span>
-              <span className="italic text-[0.95rem] text-[#555] dark:text-[#ccc] font-normal mt-1 md:mt-0">{cert.date}</span>
+              <span className="italic text-[0.95rem] text-black/60 dark:text-white/40 font-normal mt-1 md:mt-0">{cert.date}</span>
             </h3>
             <p className="m-0 text-[1rem]">{cert.issuer}</p>
           </div>
