@@ -6,7 +6,7 @@ import { translations } from '../../i18n/translations';
 let hasAnimated = false;
 
 const projectImages = [
-  'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop', // Terminal/Code for EMS
+  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop', // Data Science/Dashboard for Spotify ML
   'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=2070&auto=format&fit=crop', // Japan/Anime aesthetic for Otakufy
 ];
 

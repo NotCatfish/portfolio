@@ -26,11 +26,11 @@ export const translations = {
       github: 'GitHub →',
       items: [
         {
-          title: 'Employee Management System',
-          category: 'Software Engineering',
-          description: 'A command-line HR utility built in Python that facilitates efficient employee record management, staff tracking, and core administrative functions.',
-          tech: 'Python',
-          link: 'https://github.com/NotCatfish/employeeManagementSystem'
+          title: 'Spotify Listening ML Pipeline',
+          category: 'Data Science & Machine Learning',
+          description: 'An end-to-end data pipeline processing raw Spotify listening data through SQLite, engineered with Pandas/Plotly for EDA, and featuring an XGBoost classification model.',
+          tech: 'Python, Pandas, SQLite, XGBoost, Scikit-Learn',
+          link: 'https://github.com/NotCatfish/Spotify-Analytics-Pipeline'
         },
         {
           title: 'Otakufy (Japanese Learning Platform)',
@@ -118,13 +118,13 @@ export const translations = {
             ]
           },
           {
-            name: 'Employee Management System',
-            role: 'Software Engineering',
-            tech: 'Tech Stack: Python',
+            name: 'Spotify ML Pipeline & Data Engineering',
+            role: 'Data Science & Machine Learning',
+            tech: 'Tech Stack: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
-              'Engineered a modular command-line interface (CLI) application in Python to execute CRUD (Create, Read, Delete) operations for employee records.',
-              'Implemented core data validation logic to prevent duplicate primary keys and utilized dictionaries for structured in-memory data storage.',
-              'Designed and integrated a custom sorting algorithm (Bubble Sort) to dynamically organize and retrieve employee records by ID.'
+              'Engineered an end-to-end data pipeline processing raw Spotify listening data into a structured SQLite database for robust querying.',
+              'Conducted comprehensive Exploratory Data Analysis (EDA) using Pandas and Plotly to uncover listening trends and user engagement patterns.',
+              'Developed and optimized an XGBoost classification model utilizing Scikit-Learn pipelines and hyperparameter tuning to accurately predict track skip behavior.'
             ]
           }
         ]
@@ -204,11 +204,11 @@ export const translations = {
       github: 'GitHub →',
       items: [
         {
-          title: '従業員管理システム',
-          category: 'ソフトウェアエンジニアリング',
-          description: '効率的な従業員記録管理、スタッフ追跡、およびコア管理機能を促進する、Pythonで構築されたコマンドライン人事ユーティリティ。',
-          tech: 'Python',
-          link: 'https://github.com/NotCatfish/employeeManagementSystem'
+          title: 'Spotify視聴履歴データ・MLパイプライン',
+          category: 'データサイエンス・機械学習',
+          description: '生のSpotify視聴データをSQLite経由で処理するエンドツーエンドのデータパイプライン。PandasとPlotlyを用いたEDAと、XGBoost分類モデルを構築しました。',
+          tech: 'Python, Pandas, SQLite, XGBoost, Scikit-Learn',
+          link: 'https://github.com/NotCatfish/Spotify-Analytics-Pipeline'
         },
         {
           title: 'Otakufy (日本語学習プラットフォーム)',
@@ -296,13 +296,13 @@ export const translations = {
             ]
           },
           {
-            name: '従業員管理システム',
-            role: 'ソフトウェアエンジニアリング',
-            tech: '技術スタック: Python',
+            name: 'Spotify MLパイプラインとデータエンジニアリング',
+            role: 'データサイエンス・機械学習',
+            tech: '技術スタック: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
-              '従業員レコードのCRUD操作を行うためのモジュール式コマンドラインインターフェース（CLI）をPythonで開発。',
-              '主キーの重複を防ぐデータ検証ロジックを実装し、構造化されたインメモリデータ保存に辞書を利用。',
-              'レコードを動的に検索・整理するためのカスタムバブルソートアルゴリズムを設計・統合。'
+              '生のSpotify視聴データを構造化されたSQLiteデータベースに処理するデータパイプラインを設計し、堅牢なクエリを可能にしました。',
+              'PandasとPlotlyを使用して包括的な探索的データ分析（EDA）を実施し、視聴傾向とユーザーエンゲージメントパターンを明らかにしました。',
+              'Scikit-Learnパイプラインとハイパーパラメータチューニングを利用してXGBoost分類モデルを開発・最適化し、曲のスキップ行動を正確に予測しました。'
             ]
           }
         ]
