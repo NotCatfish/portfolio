@@ -10,9 +10,30 @@ export default function Navbar({ showResume, setShowResume }) {
   const t = translations[lang].nav;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleNavClick = (section) => {
-    setShowResume(false);
+  const handleNavClick = (e, section) => {
+    if (e) e.preventDefault();
     setMobileMenuOpen(false);
+
+    if (!section) {
+      setShowResume(false);
+      window.location.hash = '';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    setShowResume(false);
+    window.location.hash = section;
+
+    const scrollToTarget = () => {
+      const el = document.getElementById(section);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    setTimeout(scrollToTarget, 50);
+    setTimeout(scrollToTarget, 200);
+    setTimeout(scrollToTarget, 400);
   };
 
   const handleResumeClick = () => {
@@ -29,7 +50,7 @@ export default function Navbar({ showResume, setShowResume }) {
         className="fixed top-0 w-full z-50 px-6 py-4 md:py-6 flex justify-between items-center backdrop-blur-md bg-snow-100/80 dark:bg-ink-800/80 border-b border-ink-900/5 dark:border-snow-100/5"
       >
         <button 
-          onClick={() => handleNavClick()} 
+          onClick={(e) => handleNavClick(e, null)} 
           className="font-serif text-xl tracking-widest font-semibold uppercase cursor-pointer"
         >
           Indraneel<span className="text-sakura">.</span>
@@ -42,14 +63,14 @@ export default function Navbar({ showResume, setShowResume }) {
               <a 
                 key={item} 
                 href={`#${item}`} 
-                onClick={() => setShowResume(false)}
+                onClick={(e) => handleNavClick(e, item)}
                 className="hover:text-sakura transition-colors duration-300"
               >
                 {t[item]}
               </a>
             ))}
             <button 
-              onClick={() => setShowResume(true)}
+              onClick={handleResumeClick}
               className={`hover:text-sakura transition-colors duration-300 cursor-pointer ${showResume ? 'text-sakura font-medium' : ''}`}
             >
               {t.resume}
@@ -93,7 +114,7 @@ export default function Navbar({ showResume, setShowResume }) {
                 <a 
                   key={item} 
                   href={`#${item}`} 
-                  onClick={() => handleNavClick(item)}
+                  onClick={(e) => handleNavClick(e, item)}
                   className="py-2 hover:text-sakura transition-colors duration-300 border-b border-ink-900/5 dark:border-snow-100/5"
                 >
                   {t[item]}
