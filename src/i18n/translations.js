@@ -100,6 +100,7 @@ export const translations = {
             role: 'Data Science & Machine Learning',
             tech: 'Tech Stack: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
+              '<strong>Identified significant server cost savings</strong> by formulating a data-driven product strategy that leverages skip prediction to optimize invisible background audio caching and reduce streaming bandwidth.',
               '<strong>Reduced RAM footprint by 79% (277MB to 58MB)</strong> by architecting an end-to-end data pipeline that processed raw Spotify JSON logs into an optimized SQLite database using data type downcasting.',
               '<strong>Uncovered severe Concept Drift (user skip rates dropping from 31% to 4%)</strong> by conducting advanced Exploratory Data Analysis (EDA) using Pandas and Plotly.',
               '<strong>Captured ~70% of the model\'s total predictive power</strong> by engineering dense "Micro-Mood" behavioral features (e.g., seconds_since_last_skip) and applying dynamic target encoding.',
@@ -279,6 +280,7 @@ export const translations = {
             role: 'データサイエンス・機械学習',
             tech: '技術スタック: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
+              '<strong>大幅なサーバーコスト削減の機会を特定:</strong> スキップ予測を活用してバックグラウンドの音声キャッシュを最適化し、ストリーミング帯域幅を削減するデータ主導のプロダクト戦略を策定。',
               '<strong>RAM使用量を79%（277MBから58MB）削減:</strong> データ型のダウンキャストを活用し、生のSpotify視聴データを最適化されたSQLiteデータベースに処理するデータパイプラインを構築。',
               '<strong>深刻なコンセプトドリフト（スキップ率が31%から4%へ低下）を発見:</strong> PandasとPlotlyを使用した高度な探索的データ分析（EDA）を実施。',
               '<strong>モデル予測力の約70%を確保:</strong> 「マイクロムード」と呼ばれる密な行動特徴量（例: seconds_since_last_skip）を設計し、動的ターゲットエンコーディングを適用。',
