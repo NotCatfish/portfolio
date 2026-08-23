@@ -114,11 +114,10 @@ export const translations = {
             role: 'Web Development',
             tech: 'Tech Stack: Next.js, React, Tailwind CSS, Supabase (PostgreSQL), Applied Prompt Engineering',
             points: [
-              'Architected and developed a comprehensive educational web application designed to help users master Japanese vocabulary, grammar, kanji, and reading comprehension (JLPT N5-N1).',
-              'Built a modern, serverless architecture separating the frontend presentation layer from the backend database, ensuring rapid load times and seamless dynamic data fetching.',
-              'Engineered a highly responsive, animated frontend interface using Next.js and Tailwind CSS, featuring local UI state management, gamified progression systems, and interactive quizzes.',
-              'Integrated Supabase to securely handle user authentication and maintain progression data including user XP, levels, streaks, and global leaderboards.',
-              'Leveraged AI-assisted development and applied prompt engineering to accelerate system design, generate full-stack boilerplate, and debug complex component architecture.'
+              '<strong>Built a full-stack learning platform for all 5 JLPT levels (N5-N1)</strong>, helping users master Japanese vocabulary and kanji through interactive spaced-repetition quizzes.',
+              '<strong>Engineered a real-time gamified tracking system</strong> with Supabase (PostgreSQL) to manage user XP, daily streaks, and live global leaderboards.',
+              '<strong>Designed a fast, mobile-first interface</strong> using Next.js and Tailwind CSS, focusing on smooth animations and an instant dark/light mode switch.',
+              '<strong>Sped up the entire development process</strong> by actively using AI-assisted coding and prompt engineering to design the system and fix complex bugs.'
             ]
           },
           {
@@ -298,11 +297,10 @@ export const translations = {
             role: 'Web開発',
             tech: '技術スタック: Next.js, React, Tailwind CSS, Supabase (PostgreSQL), Applied Prompt Engineering',
             points: [
-              '間隔反復アルゴリズムとインタラクティブなクイズを活用した包括的な教育用Webアプリを構築。',
-              'フロントエンドとPostgreSQLバックエンドを分離したモダンなサーバーレスアーキテクチャを設計。',
-              'Tailwind CSSとNext.jsを使用して、ローカルUI状態管理、ゲーミフィケーション、インタラクティブなクイズを備えた完全レスポンシブなフロントエンドを設計。',
-              '安全なユーザー認証を統合し、進捗データ（XP、レベル、グローバルリーダーボード）を管理。',
-              'AIを活用した開発とプロンプトエンジニアリングを駆使して、システム設計と複雑なコンポーネントのデバッグを加速。'
+              '<strong>全5レベル（N5〜N1）対応のフルスタック日本語学習プラットフォームを構築:</strong> インタラクティブな間隔反復クイズを通して、単語や漢字の習得をサポート。',
+              '<strong>リアルタイムの学習記録システムを開発:</strong> Supabase (PostgreSQL) を導入し、ユーザーの経験値（XP）、連続学習日数、ライブリーダーボードを管理。',
+              '<strong>高速でモバイルファーストなUIを設計:</strong> Next.jsとTailwind CSSを活用し、滑らかなアニメーションと瞬時のダーク/ライトモード切り替えを実現。',
+              '<strong>AIを活用して開発プロセス全体を高速化:</strong> プロンプトエンジニアリングを駆使して、システム設計や複雑なバグ修正を効率的に実施。'
             ]
           },
           {
