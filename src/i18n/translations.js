@@ -85,11 +85,11 @@ export const translations = {
       skills: {
         title: 'Technical Skills',
         items: [
-          { category: 'Languages', text: 'Python, C, C++, JavaScript, HTML, CSS, SQL' },
-          { category: 'Frameworks & Libraries', text: 'React, Next.js, Tailwind CSS, Pandas, NumPy, Matplotlib, NLTK, TensorRT' },
-          { category: 'Tools & Databases', text: 'Supabase (PostgreSQL), Git, GitHub, VS Code, Antigravity IDE' },
-          { category: 'Methodologies', text: 'AI-Assisted Development, Applied Prompt Engineering, System Design, Data Structures' },
-          { category: 'Spoken Languages', text: 'English, Hindi, Bengali, Japanese (Limited Working), Gujarati, Marathi' }
+          { category: 'Languages', text: 'Python, C, C++, SQL' },
+          { category: 'Frameworks & Libraries', text: 'Pandas, NumPy, Matplotlib, Plotly, XGBoost, Scikit-Learn' },
+          { category: 'Tools & Databases', text: 'Supabase (PostgreSQL), SQLite, Git, GitHub, VS Code, Antigravity IDE' },
+          { category: 'Methodologies', text: 'Machine Learning, Data Engineering, Data Structures, Applied Prompt Engineering' },
+          { category: 'Spoken Languages', text: 'English, Hindi, Bengali, Japanese (Limited Working), Gujarati (Understanding), Marathi (Understanding)' }
         ]
       },
       projects: {
@@ -263,11 +263,11 @@ export const translations = {
       skills: {
         title: 'テクニカルスキル',
         items: [
-          { category: 'プログラミング言語', text: 'Python, C, C++, JavaScript, HTML, CSS, SQL' },
-          { category: 'フレームワークとライブラリ', text: 'React, Next.js, Tailwind CSS, Pandas, NumPy, Matplotlib, NLTK, TensorRT' },
-          { category: 'ツールとデータベース', text: 'Supabase (PostgreSQL), Git, GitHub, VS Code, Antigravity IDE' },
-          { category: '開発手法', text: 'AI-Assisted Development, Applied Prompt Engineering, System Design, Data Structures' },
-          { category: '使用言語', text: '英語、ヒンディー語、ベンガル語、日本語（日常会話）、グジャラート語、マラーティー語' }
+          { category: 'プログラミング言語', text: 'Python, C, C++, SQL' },
+          { category: 'フレームワークとライブラリ', text: 'Pandas, NumPy, Matplotlib, Plotly, XGBoost, Scikit-Learn' },
+          { category: 'ツールとデータベース', text: 'Supabase (PostgreSQL), SQLite, Git, GitHub, VS Code, Antigravity IDE' },
+          { category: '開発手法', text: '機械学習 (Machine Learning), データエンジニアリング, データ構造, Applied Prompt Engineering' },
+          { category: '使用言語', text: '英語、ヒンディー語、ベンガル語、日本語（日常会話）、グジャラート語（理解のみ）、マラーティー語（理解のみ）' }
         ]
       },
       projects: {
