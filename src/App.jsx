@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Resume from './components/Resume';
-import { LanguageProvider } from './LanguageContext';
+import Navbar from './components/layout/Navbar';
+import Hero from './components/sections/Hero';
+import Projects from './components/sections/Projects';
+import About from './components/sections/About';
+import Contact from './components/sections/Contact';
+import Footer from './components/layout/Footer';
+import Resume from './components/sections/Resume';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   const [showResume, setShowResume] = useState(false);

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import ThemeToggle from './ThemeToggle';
-import { useLanguage } from '../LanguageContext';
-import { translations } from '../i18n/translations';
+import ThemeToggle from '../ui/ThemeToggle';
+import { useLanguage } from '../../context/LanguageContext';
+import { translations } from '../../i18n/translations';
 
 export default function Navbar({ showResume, setShowResume }) {
   const { lang, toggleLanguage } = useLanguage();

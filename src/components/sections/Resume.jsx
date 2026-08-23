@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useLanguage } from '../LanguageContext';
-import { translations } from '../i18n/translations';
+import { useLanguage } from '../../context/LanguageContext';
+import { translations } from '../../i18n/translations';
 
 let hasAnimated = false;
 

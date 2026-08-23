@@ -1,5 +1,5 @@
-import { useLanguage } from '../LanguageContext';
-import { translations } from '../i18n/translations';
+import { useLanguage } from '../../context/LanguageContext';
+import { translations } from '../../i18n/translations';
 
 export default function Footer() {
   const { lang } = useLanguage();
