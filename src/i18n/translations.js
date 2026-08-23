@@ -101,8 +101,8 @@ export const translations = {
             tech: 'Tech Stack: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
               'Engineered an end-to-end data pipeline processing raw Spotify listening data into a structured SQLite database for robust querying.',
-              'Conducted comprehensive Exploratory Data Analysis (EDA) using Pandas and Plotly to uncover listening trends and user engagement patterns.',
-              'Developed and optimized an XGBoost classification model utilizing Scikit-Learn pipelines and hyperparameter tuning to accurately predict track skip behavior.'
+              'Defeated concept drift by engineering behavioral "Micro-Mood" features (e.g., seconds_since_last_skip), which accounted for ~70% of predictive power.',
+              'Developed and optimized an XGBoost classification model, achieving 0.825 ROC-AUC and 0.74 Precision in predicting track skip behavior on a strict chronological test set.'
             ]
           },
           {
@@ -279,8 +279,8 @@ export const translations = {
             tech: '技術スタック: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
             points: [
               '生のSpotify視聴データを構造化されたSQLiteデータベースに処理するデータパイプラインを設計し、堅牢なクエリを可能にしました。',
-              'PandasとPlotlyを使用して包括的な探索的データ分析（EDA）を実施し、視聴傾向とユーザーエンゲージメントパターンを明らかにしました。',
-              'Scikit-Learnパイプラインとハイパーパラメータチューニングを利用してXGBoost分類モデルを開発・最適化し、曲のスキップ行動を正確に予測しました。'
+              '行動に基づく「マイクロムード」特徴量（例: seconds_since_last_skip）を設計することでコンセプトドリフトを克服し、予測力の約70%を向上させました。',
+              'XGBoost分類モデルを開発・最適化し、厳密な時系列テストセットでの曲スキップ予測において0.825のROC-AUCと0.74の適合率（Precision）を達成しました。'
             ]
           },
           {
