@@ -31,14 +31,14 @@ export default function Resume() {
   const t = translations[lang].resume;
 
   return (
-    <div className="pt-32 pb-20 px-6 md:px-12 mx-auto max-w-[900px] font-sans text-black/50 dark:text-white/50 [&_strong]:text-black/[0.70] dark:[&_strong]:text-white/[0.70] [&_strong]:font-semibold leading-relaxed">
+    <div className="pt-32 pb-20 px-6 md:px-12 mx-auto max-w-[900px] font-sans text-black/[0.59] dark:text-white/[0.59] [&_strong]:text-black/[0.77] dark:[&_strong]:text-white/[0.77] [&_strong]:font-semibold leading-relaxed">
       
       {/* 1. Name & Contact */}
       <ProgressiveBlock>
         <h1 className="text-[2.2rem] md:text-[3rem] font-bold tracking-tight mb-2 uppercase text-black dark:text-white">
           {t.name}
         </h1>
-        <div className="flex flex-wrap items-center gap-x-2 text-[0.95rem] text-black/50 dark:text-white/50">
+        <div className="flex flex-wrap items-center gap-x-2 text-[0.95rem] text-black/[0.59] dark:text-white/[0.59]">
           {t.contact.map((item, index) => (
             <React.Fragment key={index}>
               <a href={item.href} className="hover:text-black dark:hover:text-white transition-colors">
@@ -60,9 +60,9 @@ export default function Resume() {
       {t.education.items.map((item, index) => (
         <ProgressiveBlock key={index} className="mt-5">
           <div className="mb-6">
-            <h3 className="text-[1.15rem] mb-1.5 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/[0.85] dark:text-white/[0.85]">
+            <h3 className="text-[1.15rem] mb-1.5 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/90 dark:text-white/90">
               <span>{item.school}</span>
-              <span className="italic text-[0.95rem] text-black/50 dark:text-white/50 font-normal mt-1 md:mt-0">{item.date}</span>
+              <span className="italic text-[0.95rem] text-black/[0.59] dark:text-white/[0.59] font-normal mt-1 md:mt-0">{item.date}</span>
             </h3>
             <p className="m-0 text-[1rem]">{item.degree}</p>
           </div>
@@ -97,11 +97,11 @@ export default function Resume() {
         {t.projects.items.map((project, index) => (
           <div key={index}>
             <ProgressiveBlock>
-              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-black/[0.85] dark:text-white/[0.85]">
+              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-center text-black/90 dark:text-white/90">
                 <span className="font-bold">{project.name}</span>
-                <span className="text-[0.85rem] font-medium text-black/[0.85] dark:text-white/[0.85] bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap">{project.role}</span>
+                <span className="text-[0.85rem] font-medium text-black/90 dark:text-white/90 bg-black/10 dark:bg-white/10 px-2.5 py-0.5 rounded-full mt-2 md:mt-0 whitespace-nowrap">{project.role}</span>
               </h3>
-              <div className="font-medium text-[0.95rem] text-black/[0.85] dark:text-white/[0.85] mt-2 mb-4">{project.tech}</div>
+              <div className="font-medium text-[0.95rem] text-black/90 dark:text-white/90 mt-2 mb-4">{project.tech}</div>
             </ProgressiveBlock>
             <ul className="list-disc pl-6 space-y-2">
               {project.points.map((point, i) => (
@@ -125,9 +125,9 @@ export default function Resume() {
         {t.experience.items.map((exp, index) => (
           <div key={index}>
             <ProgressiveBlock>
-              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/[0.85] dark:text-white/[0.85]">
+              <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/90 dark:text-white/90">
                 <span>{exp.role}</span>
-                <span className="italic text-[0.95rem] text-black/50 dark:text-white/50 font-normal mt-1 md:mt-0">{exp.date}</span>
+                <span className="italic text-[0.95rem] text-black/[0.59] dark:text-white/[0.59] font-normal mt-1 md:mt-0">{exp.date}</span>
               </h3>
               <p className="m-0 italic text-[1rem] mb-3">{exp.company}</p>
             </ProgressiveBlock>
@@ -152,9 +152,9 @@ export default function Resume() {
       {t.certifications.items.map((cert, index) => (
         <ProgressiveBlock key={index} className="mt-5">
           <div className="mb-8">
-            <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/[0.85] dark:text-white/[0.85]">
+            <h3 className="text-[1.15rem] mb-1 flex flex-col md:flex-row md:justify-between md:items-baseline text-black/90 dark:text-white/90">
               <span>{cert.name}</span>
-              <span className="italic text-[0.95rem] text-black/50 dark:text-white/50 font-normal mt-1 md:mt-0">{cert.date}</span>
+              <span className="italic text-[0.95rem] text-black/[0.59] dark:text-white/[0.59] font-normal mt-1 md:mt-0">{cert.date}</span>
             </h3>
             <p className="m-0 text-[1rem]">{cert.issuer}</p>
           </div>
