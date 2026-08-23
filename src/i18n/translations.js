@@ -124,11 +124,11 @@ export const translations = {
             name: 'Personal Portfolio & Interactive Resume',
             link: 'https://github.com/NotCatfish/portfolio',
             role: 'Web Development',
-            tech: 'Tech Stack: React.js, Tailwind CSS, Vite, HTML/CSS',
+            tech: 'Tech Stack: React.js, Tailwind CSS, Vite, HTML/CSS, i18n',
             points: [
-              'Engineered a single-page application (SPA) portfolio using React.js and Vite to showcase software projects and technical competencies.',
-              'Implemented dynamic localization (i18n) with context-based state management, allowing instant UI toggling between English and Japanese.',
-              'Utilized Tailwind CSS to design a fully responsive, mobile-first interface featuring dynamic dark/light mode theming and interactive components.'
+              '<strong>Engineered an instant dual-language (i18n) localization engine</strong> using React Context, enabling seamless real-time UI switching between English and Japanese.',
+              '<strong>Achieved sub-second load times and optimized bundle size</strong> by architecting a lightweight single-page application (SPA) with React.js and Vite.',
+              '<strong>Built an accessible dark/light theming system</strong> using Tailwind CSS, featuring custom contrast hierarchies and a smooth 1.5s cross-fade transition.'
             ]
           }
         ]
@@ -307,11 +307,11 @@ export const translations = {
             name: '個人ポートフォリオ ＆ インタラクティブ履歴書',
             link: 'https://github.com/NotCatfish/portfolio',
             role: 'Web開発',
-            tech: '技術スタック: React.js, Tailwind CSS, Vite, HTML/CSS',
+            tech: '技術スタック: React.js, Tailwind CSS, Vite, HTML/CSS, i18n',
             points: [
-              'React.jsとViteを使用して、ソフトウェアプロジェクトと技術的能力を示すシングルページアプリケーション（SPA）ポートフォリオを開発。',
-              '英語と日本語のシームレスな切り替えを可能にする動的ローカリゼーション（i18n）を備えたSPAを開発。',
-              'Tailwind CSSを使用して、ダーク/ライトモードやインタラクティブなコンポーネントを備えた完全レスポンシブなモバイルファーストUIを設計。'
+              '<strong>React Contextを用いた瞬時の2言語（日英）動的ローカリゼーション（i18n）を開発:</strong> ページ再読み込みなしでリアルタイムに言語を切り替える状態管理を実装。',
+              '<strong>ViteとReact.jsにより1秒未満の高速読み込みとバンドル最適化を実現:</strong> 軽量なシングルページアプリケーション（SPA）アーキテクチャを構築。',
+              '<strong>Tailwind CSSによる滑らかなダーク/ライトテーマシステムを設計:</strong> 1.5秒のクロスフェードアニメーションと視認性を重視したコントラスト階層を導入。'
             ]
           }
         ]
