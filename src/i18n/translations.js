@@ -164,6 +164,7 @@ export const translations = {
             date: 'Sep 2025 – Present',
             points: [
               '<strong>Built strong fiberglass structural parts</strong> and body panels for the team\'s competition vehicle.',
+              '<strong>Created clear technical presentations and guides</strong> to help onboard and teach junior members core vehicle structure concepts.',
               '<strong>Wrote technical reports and design documents</strong> to help the team present our vehicle build at engineering competitions.'
             ]
           }
@@ -346,6 +347,7 @@ export const translations = {
             date: '2025年9月 – 現在',
             points: [
               '<strong>高強度のグラスファイバー構造部品を製作:</strong> 競技用車両のボディパネルおよび構造フレームを製造。',
+              '<strong>後輩向けの分かりやすい技術資料・プレゼンを作成:</strong> 車両構造の基礎概念を教え、新メンバーのオンボーディングを支援。',
               '<strong>技術報告書および設計資料を作成:</strong> エンジニアリング競技会での車両プレゼンテーション用ドキュメントを執筆。'
             ]
           }
