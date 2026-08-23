@@ -31,7 +31,7 @@ export default function Resume() {
   const t = translations[lang].resume;
 
   return (
-    <div className="pt-32 pb-20 px-6 md:px-12 mx-auto max-w-[900px] font-sans text-neutral-700 dark:text-neutral-400 [&_strong]:text-neutral-700 dark:[&_strong]:text-neutral-300 [&_strong]:font-semibold leading-relaxed">
+    <div className="pt-32 pb-20 px-6 md:px-12 mx-auto max-w-[900px] font-sans text-neutral-700 dark:text-neutral-400 [&_strong]:text-neutral-800 dark:[&_strong]:text-neutral-200 [&_strong]:font-semibold leading-relaxed">
       
       {/* 1. Name & Contact */}
       <ProgressiveBlock>
@@ -52,7 +52,7 @@ export default function Resume() {
 
       {/* 2. Education */}
       <ProgressiveBlock>
-        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-[#1a1a1a] dark:text-[#fff]">
+        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-neutral-900 dark:text-neutral-100">
           {t.education.title}
         </h2>
       </ProgressiveBlock>
@@ -71,7 +71,7 @@ export default function Resume() {
 
       {/* 3. Technical Skills */}
       <ProgressiveBlock>
-        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-[#1a1a1a] dark:text-[#fff]">
+        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-neutral-900 dark:text-neutral-100">
           {t.skills.title}
         </h2>
       </ProgressiveBlock>
@@ -88,7 +88,7 @@ export default function Resume() {
 
       {/* 4. Technical Projects */}
       <ProgressiveBlock>
-        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-[#1a1a1a] dark:text-[#fff]">
+        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-neutral-900 dark:text-neutral-100">
           {t.projects.title}
         </h2>
       </ProgressiveBlock>
@@ -116,7 +116,7 @@ export default function Resume() {
 
       {/* 5. Experience */}
       <ProgressiveBlock>
-        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-[#1a1a1a] dark:text-[#fff]">
+        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-neutral-900 dark:text-neutral-100">
           {t.experience.title}
         </h2>
       </ProgressiveBlock>
@@ -144,7 +144,7 @@ export default function Resume() {
 
       {/* 6. Certifications */}
       <ProgressiveBlock>
-        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-[#1a1a1a] dark:text-[#fff]">
+        <h2 className="text-[1.4rem] border-b-2 border-[#ccc] dark:border-[#444] pb-2 mt-10 uppercase tracking-[0.08em] font-semibold text-neutral-900 dark:text-neutral-100">
           {t.certifications.title}
         </h2>
       </ProgressiveBlock>
