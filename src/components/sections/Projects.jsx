@@ -19,7 +19,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="work" className="py-32 px-6 max-w-7xl mx-auto">
+    <section id="work" className="scroll-mt-16 md:scroll-mt-20 py-24 md:py-32 px-6 max-w-7xl mx-auto">
       <div>
         <motion.div
           initial={hasAnimated ? false : { opacity: 0, y: 20 }}

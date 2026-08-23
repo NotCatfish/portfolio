@@ -14,7 +14,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className="py-32 px-6 bg-ink-900/5 dark:bg-snow-100/5 relative overflow-hidden">
+    <section id="about" className="scroll-mt-16 md:scroll-mt-20 pt-20 md:pt-28 pb-32 px-6 bg-ink-900/5 dark:bg-snow-100/5 relative overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
         <motion.div

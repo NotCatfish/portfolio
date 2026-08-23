@@ -44,7 +44,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-32 px-6 max-w-5xl mx-auto">
+    <section id="contact" className="scroll-mt-16 md:scroll-mt-20 py-24 md:py-32 px-6 max-w-5xl mx-auto">
       <div>
         <motion.div
           initial={hasAnimated ? false : { opacity: 0, y: 30 }}
