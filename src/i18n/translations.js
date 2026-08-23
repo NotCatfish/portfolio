@@ -87,9 +87,9 @@ export const translations = {
         items: [
           { category: 'Languages', text: 'Python, C, C++, SQL' },
           { category: 'Frameworks & Libraries', text: 'Pandas, NumPy, Matplotlib, Plotly, XGBoost, Scikit-Learn' },
-          { category: 'Tools & Databases', text: 'Supabase (PostgreSQL), SQLite, Git, GitHub, VS Code, Antigravity IDE' },
+          { category: 'Tools & Databases', text: 'PostgreSQL, Supabase, SQLite, Git, GitHub, VS Code, Antigravity IDE' },
           { category: 'Methodologies', text: 'Machine Learning, Data Engineering, Data Structures, Applied Prompt Engineering' },
-          { category: 'Spoken Languages', text: 'English, Hindi, Bengali, Japanese (Limited Working), Gujarati (Understanding), Marathi (Understanding)' }
+          { category: 'Spoken Languages', text: 'English, Hindi, Bengali, Japanese (Limited Working), Gujarati (Comprehension), Marathi (Comprehension)' }
         ]
       },
       projects: {
@@ -265,9 +265,9 @@ export const translations = {
         items: [
           { category: 'プログラミング言語', text: 'Python, C, C++, SQL' },
           { category: 'フレームワークとライブラリ', text: 'Pandas, NumPy, Matplotlib, Plotly, XGBoost, Scikit-Learn' },
-          { category: 'ツールとデータベース', text: 'Supabase (PostgreSQL), SQLite, Git, GitHub, VS Code, Antigravity IDE' },
+          { category: 'ツールとデータベース', text: 'PostgreSQL, Supabase, SQLite, Git, GitHub, VS Code, Antigravity IDE' },
           { category: '開発手法', text: '機械学習 (Machine Learning), データエンジニアリング, データ構造, Applied Prompt Engineering' },
-          { category: '使用言語', text: '英語、ヒンディー語、ベンガル語、日本語（日常会話）、グジャラート語（理解のみ）、マラーティー語（理解のみ）' }
+          { category: '使用言語', text: '英語、ヒンディー語、ベンガル語、日本語（日常会話）、グジャラート語（聴解・読解）、マラーティー語（聴解・読解）' }
         ]
       },
       projects: {
