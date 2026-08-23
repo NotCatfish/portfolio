@@ -31,25 +31,28 @@ function App() {
     };
   }, []);
 
-  // Auto-scroll to target section whenever returning to portfolio
+  // Instantly position viewport at target section when switching back from resume
   useEffect(() => {
     if (!showResume && window.location.hash && window.location.hash !== '#resume') {
       const targetId = window.location.hash.replace('#', '');
-      const scrollToElement = () => {
+      const positionDirectly = () => {
         const el = document.getElementById(targetId);
         if (el) {
-          el.scrollIntoView({ behavior: 'smooth' });
+          document.documentElement.style.scrollBehavior = 'auto';
+          el.scrollIntoView({ behavior: 'auto', block: 'start' });
+          setTimeout(() => {
+            document.documentElement.style.scrollBehavior = 'smooth';
+          }, 100);
         }
       };
 
-      const t1 = setTimeout(scrollToElement, 50);
-      const t2 = setTimeout(scrollToElement, 150);
-      const t3 = setTimeout(scrollToElement, 300);
+      positionDirectly();
+      const t1 = setTimeout(positionDirectly, 30);
+      const t2 = setTimeout(positionDirectly, 100);
 
       return () => {
         clearTimeout(t1);
         clearTimeout(t2);
-        clearTimeout(t3);
       };
     }
   }, [showResume]);
@@ -58,16 +61,35 @@ function App() {
     if (target === 'resume') {
       setShowResume(true);
       window.location.hash = 'resume';
+      window.scrollTo({ top: 0, behavior: 'auto' });
     } else if (target === 'home' || !target) {
-      setShowResume(false);
-      history.pushState(null, document.title, window.location.pathname + window.location.search);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (showResume) {
+        setShowResume(false);
+        history.pushState(null, document.title, window.location.pathname + window.location.search);
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      } else {
+        history.pushState(null, document.title, window.location.pathname + window.location.search);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     } else {
-      setShowResume(false);
-      window.location.hash = target;
-      const el = document.getElementById(target);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
+      if (showResume) {
+        setShowResume(false);
+        window.location.hash = target;
+        // Position directly without scrolling from top
+        const el = document.getElementById(target);
+        if (el) {
+          document.documentElement.style.scrollBehavior = 'auto';
+          el.scrollIntoView({ behavior: 'auto', block: 'start' });
+          setTimeout(() => {
+            document.documentElement.style.scrollBehavior = 'smooth';
+          }, 100);
+        }
+      } else {
+        window.location.hash = target;
+        const el = document.getElementById(target);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
     }
   };
