@@ -62,8 +62,6 @@ export const translations = {
     resume: {
       name: 'Indraneel Samanta',
       contact: [
-        { label: '+91 8879163073', href: 'tel:+918879163073' },
-        { label: 'indraneelsamanta2005@gmail.com', href: 'mailto:indraneelsamanta2005@gmail.com' },
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/indraneel-samanta-724782347' },
         { label: 'GitHub', href: 'https://github.com/NotCatfish' }
       ],
@@ -251,8 +249,6 @@ export const translations = {
     resume: {
       name: 'インドラニール・サマンタ',
       contact: [
-        { label: '+91 8879163073', href: 'tel:+918879163073' },
-        { label: 'indraneelsamanta2005@gmail.com', href: 'mailto:indraneelsamanta2005@gmail.com' },
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/indraneel-samanta-724782347' },
         { label: 'GitHub', href: 'https://github.com/NotCatfish' }
       ],
