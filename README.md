@@ -1,77 +1,141 @@
-# 💻 Interactive Personal Portfolio
+# 💻 Interactive Personal Portfolio & Resume Engine
 
 🚀 **[Click here to visit the live site!](https://indraneelsamanta.vercel.app/)**
 
-A premium, highly interactive personal portfolio website showcasing an AI-assisted approach to modern full-stack development. Built from the ground up using React, Vite, and Tailwind CSS v4, the site features a "Zen & Sakura" inspired aesthetic, dynamic scroll animations, and full internationalization (English & Japanese).
+A modern, high-performance personal portfolio and interactive resume engine showcasing an AI-orchestrated approach to full-stack frontend architecture. Built with React 19, Vite, and Tailwind CSS v4, the site features a "Zen & Sakura" aesthetic, fluid Framer Motion micro-interactions, real-time English/Japanese localization, and spam-protected contact integration.
+
+---
+
+## ⚡ Key Highlights & Engineering Wins
+
+- ⚡ **Sub-Second Load Times:** Built on Vite and React 19 for lightweight bundle distribution and instant client-side rendering.
+- 🌐 **Instant Bilingual Localization (i18n):** Seamless English & Japanese language switcher with zero layout shifts.
+- 🎨 **Adaptive "Zen & Sakura" Design System:** Custom Tailwind CSS v4 design tokens with fluid, system-aware Dark and Light mode transitions.
+- 🛡️ **Secure Contact Pipeline:** Integrated Web3Forms contact API with client-side honeypot spam protection.
+- 📄 **Source-Compiled Resumes:** Direct links to FAANG-optimized resumes compiled from raw LaTeX (`.tex`) sources.
 
 ---
 
 ## 📖 Table of Contents
-- [🌟 Key Features](#key-features)
+- [📐 Architecture & Component Flow](#architecture-component-flow)
 - [🛠️ Tech Stack](#tech-stack)
-- [🚀 Getting Started](#getting-started)
-- [🤖 AI Orchestration](#ai-orchestration)
+- [🌟 Key Features](#key-features)
+- [📁 Project Structure](#project-structure)
+- [🤖 AI Agent / IDE Directive](#ai-agent-directive)
+- [💻 Getting Started & Development](#getting-started-development)
+- [🤖 AI Orchestration Note](#ai-orchestration-note)
 - [👤 Author & Connect](#author-connect)
 - [📄 License](#license)
 
 ---
 
-## <a id="key-features"></a>🌟 Key Features
+## <a id="architecture-component-flow"></a>📐 Architecture & Component Flow
 
-- **Modern Aesthetics**: A beautifully crafted "Zen & Sakura" theme featuring smooth dark/light mode integration.
-- **Dynamic Animations**: Driven by Framer Motion to provide complex, fluid scroll reveals and interactive UI components.
-- **Internationalization**: Seamless bilingual support (English & Japanese) instantly switchable via `i18n`.
-- **Contact Integration**: Fully functional contact form powered by Web3Forms, complete with built-in spam protection.
-- **Desktop-First & Responsive**: Architected desktop-first while remaining fully optimized and beautifully responsive across mobile and tablet devices.
-- **Resume Integration**: Provides a direct link to a FAANG-optimized, downloadable HTML resume.
+```mermaid
+flowchart TD
+    A[Vite + React 19 App Root] --> B[Theme & i18n Context Providers]
+    B --> C[Hero & Dynamic About Section]
+    B --> D[Interactive Project Showcase]
+    B --> E[Skills & Tech Matrix]
+    B --> F[Web3Forms Contact Module]
+    
+    C & D & E --> G[Framer Motion Scroll Animations]
+    F -->|Honeypot Validated POST| H[Web3Forms API]
+    B -->|Language Switch Event| I[i18n Locale Dictionaries: EN / JP]
+```
 
 ---
 
 ## <a id="tech-stack"></a>🛠️ Tech Stack
 
-- **Framework**: React 19 + Vite
-- **Styling**: Tailwind CSS v4
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Linting**: Oxlint
+- **Core Framework:** React 19, Vite
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Internationalization:** i18next
+- **Forms & Backend:** Web3Forms API
+- **Code Quality:** Oxlint
 
 ---
 
-## <a id="getting-started"></a>🚀 Getting Started
+## <a id="key-features"></a>🌟 Key Features
+
+- **"Zen & Sakura" Aesthetic:** Tailored visual theme balancing Japanese minimalist typography with subtle sakura hues.
+- **Dynamic Micro-Interactions:** Smooth scroll reveals, hovering glow effects, and interactive project cards.
+- **Full Internationalization (i18n):** Complete bilingual support (English / Japanese) tailored for global recruiters.
+- **Spam-Protected Contact Form:** Production-ready messaging form with honeypot fields and input sanitization.
+- **Cross-Device Fluidity:** Architected desktop-first while adapting responsively across mobile and tablet viewports.
+
+---
+
+## <a id="project-structure"></a>📁 Project Structure
+
+```text
+myportfolio/
+├── public/                 # Static assets & favicon
+├── resume-source/          # Raw LaTeX source files (EN & JP)
+├── src/
+│   ├── assets/             # Images and design assets
+│   ├── components/         # Reusable UI components
+│   ├── context/            # Theme (Dark/Light) providers
+│   ├── i18n/               # English & Japanese translation dictionaries
+│   ├── styles/             # Tailwind CSS tokens & global overrides
+│   ├── App.jsx             # Main application layout
+│   └── main.jsx            # React root mount
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## <a id="ai-agent-directive"></a>🤖 AI Agent / IDE Directive
+
+If you are an AI assistant (Cursor, Windsurf, Copilot, or terminal agent) modifying or extending this repository:
+
+```text
+[AGENT DIRECTIVE]:
+1. Verify dependencies: `npm install`
+2. Start dev server for testing: `npm run dev`
+3. Styling Rule: Use Vanilla CSS or Tailwind CSS v4 tokens (defined in `src/styles/`).
+4. Internationalization Rule: Any new user-facing text MUST have corresponding English and Japanese keys added to `src/i18n/`.
+5. Validation: Ensure production bundle passes without errors: `npm run build`
+```
+
+---
+
+## <a id="getting-started-development"></a>💻 Getting Started & Development
 
 ### Prerequisites
-Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+- Node.js (v18+)
+- npm or yarn
 
 ### 1. Installation
-Clone the repository and install the required dependencies:
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/portfolio.git
+git clone https://github.com/NotCatfish/portfolio.git
 cd portfolio
 npm install
 ```
 
 ### 2. Local Development
-To start the local development server:
 ```bash
 npm run dev
 ```
-*The application will be available at `http://localhost:5173`.*
+*Access the local site at `http://localhost:5173`.*
 
 ### 3. Production Build
-To create a highly optimized, production-ready build:
 ```bash
 npm run build
+npm run preview
 ```
-*The output will be generated in the `dist` folder. You can locally preview the production build using `npm run preview`.*
 
 ### Deployment
-This project is optimized for instant deployment on platforms like [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/). Simply connect your repository, set the build command to `npm run build`, and point the output directory to `dist`.
+Optimized for zero-config deployments on [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/). Connect the GitHub repository with the build command `npm run build` and publish directory `dist`.
 
 ---
 
-## <a id="ai-orchestration"></a>🤖 AI Orchestration
+## <a id="ai-orchestration-note"></a>🤖 AI Orchestration Note
 
-This project serves as a showcase of **AI-Assisted Full-Stack Development**. It was rapidly architected and deployed by leveraging and directing advanced AI coding assistants. This approach demonstrates strong system design capabilities, efficient prompt engineering, and the ability to orchestrate modern development tools to securely build production-ready applications from scratch.
+This project is a showcase of **AI-Assisted Full-Stack Development**. It was designed, architected, and iteratively refined by directing advanced AI coding models. This approach demonstrates strong system design, prompt engineering efficiency, and the modern ability to rapidly bring ideas from conception to production.
 
 ---
 
