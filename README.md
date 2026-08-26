@@ -11,12 +11,12 @@ A premium, highly interactive personal portfolio website showcasing an AI-assist
 - [🛠️ Tech Stack](#tech-stack)
 - [🚀 Getting Started](#getting-started)
 - [🤖 AI Orchestration](#ai-orchestration)
-- [👤 Author & Connect](#author--connect)
+- [👤 Author & Connect](#author-connect)
 - [📄 License](#license)
 
 ---
 
-## 🌟 Key Features
+## <a id="key-features"></a>🌟 Key Features
 
 - **Modern Aesthetics**: A beautifully crafted "Zen & Sakura" theme featuring smooth dark/light mode integration.
 - **Dynamic Animations**: Driven by Framer Motion to provide complex, fluid scroll reveals and interactive UI components.
@@ -27,7 +27,7 @@ A premium, highly interactive personal portfolio website showcasing an AI-assist
 
 ---
 
-## 🛠️ Tech Stack
+## <a id="tech-stack"></a>🛠️ Tech Stack
 
 - **Framework**: React 19 + Vite
 - **Styling**: Tailwind CSS v4
@@ -37,7 +37,7 @@ A premium, highly interactive personal portfolio website showcasing an AI-assist
 
 ---
 
-## 🚀 Getting Started
+## <a id="getting-started"></a>🚀 Getting Started
 
 ### Prerequisites
 Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
@@ -69,13 +69,13 @@ This project is optimized for instant deployment on platforms like [Vercel](http
 
 ---
 
-## 🤖 AI Orchestration
+## <a id="ai-orchestration"></a>🤖 AI Orchestration
 
 This project serves as a showcase of **AI-Assisted Full-Stack Development**. It was rapidly architected and deployed by leveraging and directing advanced AI coding assistants. This approach demonstrates strong system design capabilities, efficient prompt engineering, and the ability to orchestrate modern development tools to securely build production-ready applications from scratch.
 
 ---
 
-## 👤 Author & Connect
+## <a id="author-connect"></a>👤 Author & Connect
 
 **Indraneel Samanta**  
 *Aspiring Data & AI Engineer | B.Tech in AIML @ DJSCE*
@@ -86,6 +86,6 @@ This project serves as a showcase of **AI-Assisted Full-Stack Development**. It 
 
 ---
 
-## 📄 License
+## <a id="license"></a>📄 License
 
 This project is open-source and available under the [MIT License](LICENSE).
