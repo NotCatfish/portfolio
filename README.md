@@ -33,15 +33,15 @@ A modern, high-performance personal portfolio and interactive resume engine show
 
 ```mermaid
 flowchart TD
-    A[Vite + React 19 App Root] --> B[Theme & i18n Context Providers]
-    B --> C[Hero & Dynamic About Section]
-    B --> D[Interactive Project Showcase]
-    B --> E[Skills & Tech Matrix]
-    B --> F[Web3Forms Contact Module]
+    App["Vite + React 19<br/>App Root"]
     
-    C & D & E --> G[Framer Motion Scroll Animations]
-    F -->|Honeypot Validated POST| H[Web3Forms API]
-    B -->|Language Switch Event| I[i18n Locale Dictionaries: EN / JP]
+    App -->|"State & Theme"| Context["Theme & i18n<br/>Context Engine"]
+    App -->|"UI Sections"| Sections["Hero, Projects<br/>& Skills Sections"]
+    App -->|"Contact Pipeline"| Contact["Web3Forms<br/>Contact Module"]
+    
+    Context -->|"Localization"| Locales["i18n Dictionaries<br/>(EN / JP)"]
+    Sections -->|"Interactions"| Motion["Framer Motion<br/>Animation Engine"]
+    Contact -->|"Validated POST"| API["Web3Forms<br/>REST API"]
 ```
 
 ---
