@@ -46,37 +46,35 @@ export default function About() {
             <div>
               <h4 className="text-sakura tracking-widest text-xs uppercase mb-4">{t.prog}</h4>
               <ul className="space-y-2 text-ink-700 dark:text-snow-200">
-                <li>SQL (PostgreSQL, SQLite)</li>
-                <li>Python</li>
-                <li>JavaScript, C++</li>
+                <li>Python, SQL (PostgreSQL, SQLite)</li>
+                <li>C++, C, SQLAlchemy</li>
               </ul>
             </div>
             
             <div>
               <h4 className="text-sakura tracking-widest text-xs uppercase mb-4">{t.data}</h4>
               <ul className="space-y-2 text-ink-700 dark:text-snow-200">
-                <li>Pandas, Plotly</li>
-                <li>Jupyter, Scikit-Learn</li>
-                <li>XGBoost</li>
+                <li>ETL, A/B Testing, Feature Engineering</li>
+                <li>Statistical Analysis, EDA</li>
+                <li>Plotly, Seaborn</li>
               </ul>
             </div>
 
             <div>
               <h4 className="text-sakura tracking-widest text-xs uppercase mb-4">{t.tools}</h4>
               <ul className="space-y-2 text-ink-700 dark:text-snow-200">
-                <li>React.js, Tailwind CSS</li>
-                <li>Supabase, Git</li>
-                <li>Linux</li>
+                <li>XGBoost, Random Forest, Scikit-Learn</li>
+                <li>Optuna, MLflow, DVC</li>
+                <li>Pandas, NumPy</li>
               </ul>
             </div>
 
             <div>
               <h4 className="text-sakura tracking-widest text-xs uppercase mb-4">{t.algo}</h4>
               <ul className="space-y-2 text-ink-700 dark:text-snow-200 text-sm md:text-base">
-                <li>Data Analytics, EDA</li>
-                <li>ETL Pipelines</li>
-                <li>Feature Engineering</li>
-                <li>Predictive Modeling</li>
+                <li>AWS, Docker, CI/CD (GitHub Actions)</li>
+                <li>FastAPI, REST APIs</li>
+                <li>Pytest, Git, Linux</li>
               </ul>
             </div>
           </div>

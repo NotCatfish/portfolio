@@ -14,29 +14,29 @@ export const translations = {
       title: 'Driven by curiosity and logic.',
       p1: 'Currently pursuing my BTech in Artificial Intelligence and Machine Learning at Dwarka Das J Sanghvi College of Engineering (Class of 2028).',
       p2: 'I combine SQL and Python to uncover insights through data analysis, engineer robust data pipelines, and develop end-to-end machine learning models. I am actively building my full-stack ML skills and working on practical projects to secure a Data Engineering or ML internship in 2027.',
-      quote: '"Artificial intelligence must remain a tool for human empowerment. My goal is to architect highly capable systems that are inherently ethical, secure, and strictly aligned with human well-being."',
+      quote: '"Intelligent systems are only as powerful as the data that fuels them. My goal is to engineer robust data pipelines and architect highly capable machine learning models that drive actionable insights and human empowerment."',
       core: 'Technical Skills',
-      prog: 'Languages',
+      prog: 'Programming & Databases',
       data: 'Data & Analytics',
-      tools: 'Web & Tools',
-      algo: 'Methodologies'
+      tools: 'Machine Learning & MLOps',
+      algo: 'Cloud & Backend'
     },
     projects: {
       title: 'Selected Work',
       github: 'GitHub →',
       items: [
         {
-          title: 'Spotify Listening ML Pipeline',
+          title: 'Spotify ML Pipeline & Data Engineering',
           category: 'Data Science & Machine Learning',
-          description: 'An end-to-end data pipeline processing raw Spotify listening data through SQLite, engineered with Pandas/Plotly for EDA, and featuring an XGBoost classification model.',
-          tech: 'Python, Pandas, SQLite, XGBoost, Scikit-Learn',
+          description: 'An end-to-end Machine Learning pipeline tracking user listening behavior. Engineered with XGBoost, PostgreSQL buffer streaming, and a FastAPI inference microservice to optimize CDN bandwidth.',
+          tech: 'AWS, Docker, XGBoost, FastAPI, PostgreSQL, Python',
           link: 'https://github.com/NotCatfish/Spotify-Analytics-Pipeline'
         },
         {
           title: 'Otakufy (Japanese Learning Platform)',
-          category: 'Web Development',
-          description: 'A comprehensive educational platform designed to help users master Japanese vocabulary, grammar, kanji, and reading comprehension through spaced repetition and interactive quizzes.',
-          tech: 'Next.js, React, Tailwind CSS, Supabase, AI-Assisted Development',
+          category: 'Web Development / NLP',
+          description: 'A highly optimized full-stack educational platform. Built with Next.js and PostgreSQL, featuring an automated NLP data pipeline for dynamic Kanji tokenization and CTE-indexed slice queries.',
+          tech: 'PostgreSQL, Next.js, NLP (Kuroshiro), Supabase',
           link: 'https://github.com/NotCatfish/Otakufy'
         }
       ]
@@ -70,24 +70,19 @@ export const translations = {
         items: [
           {
             school: 'Dwarkadas J. Sanghvi College of Engineering',
-            date: 'Expected Graduation: May 2028',
-            degree: 'Bachelor of Technology in Artificial Intelligence and Machine Learning (AIML)'
-          },
-          {
-            school: 'Thakur College of Science & Commerce',
-            date: 'June 2021 – May 2023',
-            degree: 'Computer Science'
+            degree: 'Bachelor of Technology in Artificial Intelligence and Machine Learning (AIML)',
+            date: 'Expected Graduation: May 2028'
           }
-        ]
+        ],
       },
       skills: {
         title: 'Skills & Languages',
         items: [
-          { category: 'Languages', text: 'SQL (PostgreSQL, SQLite), Python, JavaScript, C++' },
-          { category: 'Data & Analytics', text: 'Pandas, Plotly, Jupyter, Scikit-Learn, XGBoost' },
-          { category: 'Web & Tools', text: 'React.js, Tailwind CSS, Supabase, Git, Linux' },
-          { category: 'Methodologies', text: 'Data Analytics, Exploratory Data Analysis (EDA), ETL Pipelines, Feature Engineering, Predictive Modeling' },
-          { category: 'Spoken Languages', text: 'English (Fluent), Japanese (Conversational), Hindi (Fluent), Bengali (Fluent), Gujarati (Listening), Marathi (Listening)' }
+          { category: 'Programming & Databases', text: 'Python, SQL (PostgreSQL, SQLite), C++, C, SQLAlchemy' },
+          { category: 'Data & Analytics', text: 'ETL Pipelines, A/B Testing, Feature Engineering, Statistical Analysis, EDA, Data Visualization (Plotly, Seaborn)' },
+          { category: 'Machine Learning & MLOps', text: 'XGBoost, Random Forest, Scikit-Learn, Optuna, MLflow, DVC, Pandas, NumPy' },
+          { category: 'Cloud & Backend', text: 'AWS, Docker, CI/CD (GitHub Actions), FastAPI, REST API, Supabase, Pytest, Git' },
+          { category: 'Spoken Languages', text: 'English (Fluent), Japanese (N1 Prep), Hindi (Fluent), Bengali (Fluent)' }
         ]
       },
       projects: {
@@ -97,42 +92,35 @@ export const translations = {
             name: 'Spotify ML Pipeline & Data Engineering',
             link: 'https://github.com/NotCatfish/Spotify-Analytics-Pipeline',
             role: 'Data Science & Machine Learning',
-            tech: 'Tech Stack: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
+            tech: 'Tech Stack: AWS, PostgreSQL, XGBoost, FastAPI',
             points: [
-              '<strong>Cut memory usage by 79% (from 277MB to 58MB)</strong> by building a data pipeline that compresses raw streaming logs into a database.',
-              '<strong>Created a tool that automatically generates over 60 interactive charts</strong> to instantly show user listening habits without needing any manual setup.',
-              '<strong>Tracked short-term user habits to help the system quickly adapt</strong> when the number of skipped songs suddenly dropped from 31% to 4%.',
-              '<strong>Trained a predictive model to identify user skips</strong>, adjusting the system to handle uneven data so it wouldn\'t just blindly guess "no".',
-              '<strong>Improved the model\'s ability to catch skipped songs</strong> by strictly testing it on future timelines, ensuring the system wasn\'t cheating by looking at past data.',
-              '<strong>Extracted hidden listening patterns by creating over 40 custom data points</strong> from raw timestamps, such as tracking exactly what time of day a user usually skips songs.',
-              '<strong>Proposed a way to cut server costs</strong> by using skip predictions to stop caching songs the user is likely to skip, saving streaming bandwidth.'
+              '<strong>Optimized dataset footprint by 85% (277MB to 42.5MB)</strong> via algorithmic downcasting, and architected an ETL pipeline utilizing PostgreSQL native buffer streaming to <strong>slash export times from 15 minutes to 3.2s</strong>.',
+              '<strong>Engineered a 19-feature matrix</strong> to predict user skips with <strong>≥80% precision</strong>, employing chronological walk-forward splitting and <strong>GPU-accelerated Optuna</strong> (doubling throughput to 4 it/s compared to CPU-only) for 300-trial XGBoost hyperparameter tuning.',
+              '<strong>Architected a Financial Utility A/B Testing Simulator</strong> to quantify model ROI, simulating <strong>838 MB of CDN bandwidth savings</strong> across the dataset and proving the high-precision strategy maximizes dollar savings by avoiding false-positive user disruptions.',
+              '<strong>Deployed a real-time FastAPI microservice</strong> and interactive queue dashboard using Docker, dispatching live model predictions to a <strong>Dual-Policy Action Engine</strong> for dynamic CDN bandwidth throttling.',
+              '<strong>Enforced strict MLOps and production reliability standards</strong> by orchestrating a 20-test Pytest suite, GitHub Actions CI/CD pipelines, and managing heavy model artifacts via <strong>Data Version Control (DVC)</strong>.'
             ]
           },
           {
             name: 'Otakufy | Full-Stack Japanese Learning Platform',
             link: 'https://github.com/NotCatfish/Otakufy',
-            role: 'Web Development',
-            tech: 'Tech Stack: Next.js, React, Tailwind CSS, Supabase (PostgreSQL)',
+            role: 'Web Development / NLP',
+            tech: 'Tech Stack: PostgreSQL, Next.js, NLP (Kuroshiro)',
             points: [
-              '<strong>Delivered lightning-fast quiz load times for all 5 JLPT levels</strong> by building a web app that pre-loads vocabulary data instead of fetching it live.',
-              '<strong>Built a highly responsive, mobile-like user experience</strong> by integrating a custom flashcard quiz engine directly into the frontend.',
-              '<strong>Drove user engagement through daily streaks and leaderboards</strong> by adding secure logins and real-time progress tracking.',
-              '<strong>Rapidly built the entire website from scratch</strong> by directing AI coding assistants based on clear, human-driven instructions.',
-              '<strong>Ensured a seamless experience across all devices</strong> by designing a mobile-first layout that automatically scales perfectly to tablets and desktop screens.',
-              '<strong>Proved the effectiveness of the platform</strong> by using it to pass advanced N2/N1 practice exams, learning kanji faster than traditional flashcard apps.'
+              '<strong>Engineered an automated data pipeline to audit and sanitize a 14,082-item JSON dataset</strong>, conducting deep linguistic, conjugation, and redundancy scans to ensure <strong>100% byte-parity</strong> with PostgreSQL seeds.',
+              '<strong>Optimized backend data retrieval</strong> by replacing slow SQL ORDER BY random() operations with <strong>CTE indexed slice queries</strong>, enabling the millisecond shuffling of the entire 14,082-item question bank.',
+              '<strong>Integrated Japanese NLP tokenization pipelines (Kuroshiro & Wanakana)</strong> to programmatically parse complex Kanji structures and dynamically generate phonetic reading aids, enabling automated content scaling.',
+              '<strong>Enforced strict data integrity via PostgreSQL Row-Level Security (RLS)</strong> policies, ensuring leaderboard authenticity and preventing unauthorized state mutations across concurrent API queries.'
             ]
           },
           {
             name: 'Personal Portfolio & Interactive Resume',
             link: 'https://github.com/NotCatfish/portfolio',
-            role: 'Web Development',
-            tech: 'Tech Stack: React.js, Tailwind CSS, Vite, HTML/CSS, i18n',
+            role: 'Web Development / API',
+            tech: 'Tech Stack: React 19, REST APIs, JSON (i18n)',
             points: [
-              '<strong>Built a fast, responsive personal website using modern tools</strong> with smooth scrolling animations to showcase project work.',
-              '<strong>Added an instant English-to-Japanese translation switch and a custom dark mode theme</strong> to make the site easy to read for recruiters in Japan.',
-              '<strong>Set up a working contact form with built-in spam protection</strong> while keeping the underlying code clean and error-free.',
-              '<strong>Automated the website publishing process</strong> so that any new code updates were instantly and seamlessly pushed to the live site without manual work.',
-              '<strong>Created a highly reusable component architecture</strong>, making it easy to add new projects or skills in the future without touching the core code.'
+              '<strong>Executed comprehensive cybersecurity audits and static code analysis</strong>, successfully remediating high-severity CWE vulnerabilities (Path Traversal, DoS) and verifying XSS DOM sanitization.',
+              '<strong>Integrated a production-ready REST API pipeline for automated contact routing</strong>, implementing strict client-side honeypot mechanisms and input sanitization to mitigate automated bot spam.'
             ]
           }
         ]
@@ -141,35 +129,12 @@ export const translations = {
         title: 'Experience',
         items: [
           {
-            role: 'Artificial Intelligence Intern',
-            company: 'Acmegrade',
-            date: 'Sep 2025 – Nov 2025',
-            tech: 'Tech Stack: Python, Pandas, Scikit-Learn, Plotly, Linear Regression',
-            points: [
-              '<strong>Conducted Exploratory Data Analysis (EDA) on 50,000+ transactional sales records</strong> to analyze customer purchasing trends, category performance, and seasonal dips.',
-              '<strong>Engineered sales performance metrics and KPI dashboards</strong> using Pandas and Plotly to track monthly category growth rates and profit margins.',
-              '<strong>Trained a predictive regression model</strong> to forecast quarterly product category demand, optimizing inventory planning and minimizing stockouts.'
-            ]
-          },
-          {
             role: 'Logistics & Events Co-committee',
             company: 'Google Developer Student Club (GDSC) DJSCE',
             date: 'Oct 2025 – Present',
             points: [
-              '<strong>Managed event logistics and venue setup for 200+ attendees</strong> during college hackathons and tech competitions.',
-              '<strong>Led a 5-member team</strong> to design and build custom event props and stage setups for college tech events.',
-              '<strong>Handled overnight hackathon operations</strong>, managing sleeping setups, venue security, and attendee needs.',
-              '<strong>Reached out to sponsors and participants</strong> through email campaigns and direct calls to boost event sign-ups.'
-            ]
-          },
-          {
-            role: 'Structures Co-committee',
-            company: 'DJS Impulse',
-            date: 'Sep 2025 – Present',
-            points: [
-              '<strong>Built strong fiberglass structural parts</strong> and body panels for the team\'s competition vehicle.',
-              '<strong>Created clear technical presentations and guides</strong> to help onboard and teach junior members core vehicle structure concepts.',
-              '<strong>Wrote technical reports and design documents</strong> to help the team present our vehicle build at engineering competitions.'
+              '<strong>Led a 5-member operations team to manage and execute</strong> end-to-end logistics for collegiate hackathons, successfully coordinating venue scheduling, technical infrastructure, and event-day operations to support <strong>350+ attendees</strong>.',
+              '<strong>Managed corporate outreach and sponsor communications</strong>, pitching technical event roadmaps to industry partners to successfully secure funding, while driving participant registration across multiple campus networks.'
             ]
           }
         ]
@@ -201,29 +166,29 @@ export const translations = {
       title: '好奇心と論理への探求。',
       p1: '現在、Dwarka Das J Sanghvi College of Engineeringにて人工知能と機械学習のBTechを取得中（2028年卒業予定）。',
       p2: 'SQLとPythonを組み合わせてデータ分析からインサイトを導き出し、堅牢なデータパイプラインを構築し、エンドツーエンドの機械学習モデルを開発しています。2027年のデータエンジニアリングまたはMLインターンシップ獲得に向けて、フルスタックMLスキルを磨きながら実践的なプロジェクトに取り組んでいます。',
-      quote: '「人工知能は人類に力を与えるためのツールであり続けなければなりません。私の目標は、本質的に倫理的で安全であり、人類の幸福と厳密に一致した、高度な能力を持つシステムを設計することです。」',
+      quote: '「知的システムは、それを駆動するデータがあってこそ真価を発揮します。私の目標は、堅牢なデータパイプラインを構築し、実践的なインサイトと人々のエンパワーメントを促進する、高度な機械学習モデルを設計することです。」',
       core: '技術スキル',
-      prog: 'プログラミング言語',
-      data: 'データと分析',
-      tools: 'Webとツール',
-      algo: '方法論'
+      prog: 'プログラミングとデータベース',
+      data: 'データ分析',
+      tools: '機械学習とMLOps',
+      algo: 'クラウドとバックエンド'
     },
     projects: {
       title: '厳選された実績',
       github: 'GitHub →',
       items: [
         {
-          title: 'Spotify視聴履歴データ・MLパイプライン',
+          title: 'Spotify MLパイプラインとデータエンジニアリング',
           category: 'データサイエンス・機械学習',
-          description: '生のSpotify視聴データをSQLite経由で処理するエンドツーエンドのデータパイプライン。PandasとPlotlyを用いたEDAと、XGBoost分類モデルを構築しました。',
-          tech: 'Python, Pandas, SQLite, XGBoost, Scikit-Learn',
+          description: 'XGBoost、PostgreSQLバッファストリーミング、FastAPI推論マイクロサービスを活用し、ユーザーの視聴習慣を追跡してCDN帯域幅を最適化するエンドツーエンドのMLパイプライン。',
+          tech: 'AWS, Docker, XGBoost, FastAPI, PostgreSQL, Python',
           link: 'https://github.com/NotCatfish/Spotify-Analytics-Pipeline'
         },
         {
           title: 'Otakufy (日本語学習プラットフォーム)',
-          category: 'ウェブ開発',
-          description: '間隔反復やインタラクティブなクイズを通じて、ユーザーが日本語の語彙、文法、漢字、読解を習得できるように設計された包括的な教育プラットフォーム。',
-          tech: 'Next.js, React, Tailwind CSS, Supabase, AI-Assisted Development',
+          category: 'ウェブ開発 / NLP',
+          description: 'Next.jsとPostgreSQLで構築された、高度に最適化されたフルスタック教育プラットフォーム。動的な漢字トークナイゼーションのための自動NLPデータパイプラインと、CTEインデックス付きスライスクエリを搭載。',
+          tech: 'PostgreSQL, Next.js, NLP (Kuroshiro), Supabase',
           link: 'https://github.com/NotCatfish/Otakufy'
         }
       ]
@@ -256,25 +221,20 @@ export const translations = {
         title: '学歴',
         items: [
           {
-            school: 'Dwarkadas J. Sanghvi 工科大学 (DJSCE)',
-            date: '卒業予定: 2028年5月',
-            degree: '人工知能・機械学習（AIML）学士課程'
-          },
-          {
-            school: 'Thakur 理系・商学カレッジ',
-            date: '2021年6月 – 2023年5月',
-            degree: 'コンピュータサイエンス'
+            school: 'Dwarkadas J. Sanghvi College of Engineering (DJSCE)',
+            degree: '人工知能・機械学習 (AIML) 学士課程',
+            date: '2028年5月 卒業予定'
           }
-        ]
+        ],
       },
       skills: {
         title: 'スキル・語学',
         items: [
-          { category: 'プログラミング言語', text: 'SQL (PostgreSQL, SQLite), Python, JavaScript, C++' },
-          { category: 'データ・分析', text: 'Pandas, Plotly, Jupyter, Scikit-Learn, XGBoost' },
-          { category: 'Web・ツール', text: 'React.js, Tailwind CSS, Supabase, Git, Linux' },
-          { category: '方法論', text: 'データ分析, 探索的データ分析 (EDA), ETLパイプライン, 特徴量エンジニアリング, 予測モデリング' },
-          { category: '語学', text: '英語（流暢）, 日本語（日常会話）, ヒンディー語（流暢）, ベンガル語（流暢）, グジャラート語（聴解）, マラーティー語（聴解）' }
+          { category: 'プログラミングとデータベース', text: 'Python, SQL (PostgreSQL, SQLite), C++, C, SQLAlchemy' },
+          { category: 'データ分析', text: 'ETLパイプライン, A/Bテスト, 特徴量エンジニアリング, 統計分析, 探索的データ解析 (EDA), データ可視化 (Plotly, Seaborn)' },
+          { category: '機械学習とMLOps', text: 'XGBoost, Random Forest, Scikit-Learn, Optuna, MLflow, DVC, Pandas, NumPy' },
+          { category: 'クラウドとバックエンド', text: 'AWS, Docker, CI/CD (GitHub Actions), FastAPI, REST API, Supabase, Pytest, Git' },
+          { category: '使用言語', text: '英語（流暢）, 日本語（N1準備中）, ヒンディー語（流暢）, ベンガル語（流暢）' }
         ]
       },
       projects: {
@@ -284,79 +244,49 @@ export const translations = {
             name: 'Spotify MLパイプラインとデータエンジニアリング',
             link: 'https://github.com/NotCatfish/Spotify-Analytics-Pipeline',
             role: 'データサイエンス・機械学習',
-            tech: '技術スタック: Python, Pandas, SQLite, XGBoost, Scikit-Learn, Plotly',
+            tech: '技術スタック: AWS, PostgreSQL, XGBoost, FastAPI',
             points: [
-              '<strong>メモリ使用量を79%（277MBから58MBへ）削減:</strong> 生のストリーミングログをデータベースに圧縮するデータパイプラインを構築。',
-              '<strong>60以上のインタラクティブチャートを自動生成するツールを作成:</strong> 手動設定なしで視聴習慣を即座に表示。',
-              '<strong>短期的なユーザー習慣を追跡:</strong> スキップ率が31%から4%へ急減した際、システムが迅速に適応できるよう支援。',
-              '<strong>スキップを特定する予測モデルを訓練:</strong> 単なる推測を避けるため、不均衡データを処理するようシステムを調整。',
-              '<strong>スキップ曲検出モデルの能力向上:</strong> データ漏洩を防ぐため、将来のタイムラインで厳密にテスト。',
-              '<strong>隠れたリスニングパターンを抽出:</strong> 生のタイムスタンプから40以上のデータポイントを作成（時間帯ごとの傾向など）。',
-              '<strong>サーバーコストを削減する手法を提案:</strong> スキップ予測を活用して、ユーザーがスキップしそうな曲の事前読み込みを停止し、ストリーミング帯域幅を節約。'
+              '<strong>データセットサイズを85%削減（277MBから42.5MB）</strong>するアルゴリズム的ダウンキャスト処理を実装。PostgreSQLネイティブバッファストリーミングを活用したETLパイプラインを構築し、<strong>データエクスポート時間を15分から3.2秒へ短縮</strong>。',
+              '<strong>19種類の特徴量行列を設計</strong>し、時系列に基づくウォークフォワード分割と<strong>GPUアクセラレーションを実装したOptuna</strong>による300回のハイパーパラメータチューニングを実施し、<strong>スキップ予測精度80%以上</strong>を達成。',
+              '<strong>モデルの投資対効果（ROI）を定量化するA/Bテストシミュレーターを構築</strong>。データセット全体で<strong>838MBのCDN帯域幅の節約</strong>をシミュレートし、誤検知によるユーザー体験の低下を回避する高精度な戦略がコスト削減を最大化することを立証。',
+              'Dockerを活用して<strong>リアルタイム推論用のFastAPIマイクロサービス</strong>とインタラクティブなキューダッシュボードを展開し、推論結果を<strong>デュアルポリシー実行エンジン</strong>へ送信して動的なCDN帯域制限を実現。',
+              '20項目のPytestスイートやGitHub ActionsによるCI/CDパイプラインをオーケストレーションし、<strong>Data Version Control (DVC)</strong>を用いて大規模なモデル成果物を管理することで、<strong>厳格なMLOpsおよび本番環境の信頼性基準を適用</strong>。'
             ]
           },
           {
-            name: 'Otakufy | フルスタック日本語学習プラットフォーム',
+            name: 'Otakufy フルスタック日本語学習プラットフォーム',
             link: 'https://github.com/NotCatfish/Otakufy',
-            role: 'Web開発',
-            tech: '技術スタック: Next.js, React, Tailwind CSS, Supabase (PostgreSQL)',
+            role: 'Web開発 / NLP',
+            tech: '技術スタック: PostgreSQL, Next.js, NLP (Kuroshiro)',
             points: [
-              '<strong>全JLPTレベルで超高速クイズ読込を実現:</strong> 語彙データを動的取得せず事前読込するWebアプリを構築。',
-              '<strong>モバイルライクな高応答性UXを構築:</strong> カスタムフラッシュカードエンジンをフロントエンドに統合。',
-              '<strong>ユーザーエンゲージメントを促進:</strong> 安全なログインと進捗追跡により、連続学習とリーダーボードを提供。',
-              '<strong>Webサイト全体をゼロから迅速に構築:</strong> 明確な指示に基づきAIコーディングアシスタントを活用。',
-              '<strong>全デバイスでシームレスな体験を保証:</strong> タブレットやPCに自動拡張するモバイルファーストなレイアウトを設計。',
-              '<strong>プラットフォームの有効性を実証:</strong> 実際にこのシステムを使用して高度なN2/N1レベルの模擬試験に合格し、従来の単語帳アプリよりも速く漢字を習得。'
+              '<strong>14,082項目のJSONデータセットを監査・サニタイズする自動データパイプラインを構築</strong>。詳細な言語分析、活用形、複数のスクリーニングを実行し、PostgreSQLシードデータとの<strong>100%のバイト単位の整合性を保証</strong>。',
+              '<strong>低速なSQLのORDER BY random()処理をCTEのインデックス付きスライスクエリに置き換える</strong>ことでバックエンドのデータ取得を最適化し、14,082項目のクエスチョンバンク全体のミリ秒単位でのシャッフルを実現。',
+              '<strong>日本語NLPトークナイゼーションパイプライン（KuroshiroとWanakana）を統合</strong>。複雑な漢字構造をプログラムで解析してフリガナを動的に生成し、コンテンツの自動スケーリングを実現。',
+              '<strong>PostgreSQLの行レベルセキュリティ(RLS)ポリシーにより厳格なデータ整合性を強化</strong>。リーダーボードの真正性を確保するとともに、同時実行APIクエリにおける不正な状態変更を防止。'
             ]
           },
           {
-            name: '個人ポートフォリオ ＆ インタラクティブ履歴書',
+            name: '個人ポートフォリオ＆インタラクティブ履歴書',
             link: 'https://github.com/NotCatfish/portfolio',
-            role: 'Web開発',
-            tech: '技術スタック: React.js, Tailwind CSS, Vite, HTML/CSS, i18n',
+            role: 'Web開発 / API',
+            tech: '技術スタック: React 19, REST APIs, JSON (i18n)',
             points: [
-              '<strong>高速でレスポンシブな個人サイトを構築:</strong> スムーズなスクロールアニメーションを備えたモダンなツールを使用。',
-              '<strong>日英翻訳スイッチとカスタムダークモードを追加:</strong> 日本の採用担当者がサイトを読みやすいように設計。',
-              '<strong>実用的なお問い合わせフォームを設置:</strong> スパム対策機能を組み込みつつ、基本コードをクリーンに維持。',
-              '<strong>Webサイト公開プロセスを自動化:</strong> 手作業なしで即座かつシームレスにライブサイトにプッシュされるように設定。',
-              '<strong>再利用可能なコンポーネント設計を構築:</strong> 将来的に新しいプロジェクトやスキルを簡単に追加できるよう、コアコードに触れずに更新可能な構造を作成。'
+              '<strong>包括的なサイバーセキュリティ監査と静的コード解析を実行</strong>し、深刻度の高いCWE脆弱性（パストラバーサル、DoS）を修正するとともに、XSSに対するDOMサニタイズを検証。',
+              '<strong>自動連絡ルーティング用の本番環境向けREST APIパイプラインを統合</strong>し、クライアント側のハニーポット機構と入力サニタイズを実装して自動化されたボットスパムを軽減。'
             ]
           }
         ]
       },
       experience: {
-        title: '職歴・活動実績',
+        title: '職歴',
         items: [
-          {
-            role: '人工知能（AI）インターン',
-            company: 'Acmegrade',
-            date: '2025年9月 – 2025年11月',
-            tech: '技術スタック: Python, Pandas, Scikit-Learn, Plotly, 線形回帰',
-            points: [
-              '<strong>5万件以上の購買トランザクションデータを対象にEDAを実施:</strong> 顧客の購買傾向、カテゴリー別実績、季節変動を解析。',
-              '<strong>主要KPIおよび売上ダッシュボードを構築:</strong> PandasとPlotlyを活用して月次成長率やカテゴリー別利益率を可視化。',
-              '<strong>四半期ごとの需要予測回帰モデルを構築:</strong> 在庫計画の最適化と品切れリスクの低減を支援する予測モデルをトレーニング。'
-            ]
-          },
           {
             role: 'ロジスティクス・イベント共同委員',
             company: 'Google Developer Student Club (GDSC) DJSCE',
             date: '2025年10月 – 現在',
             points: [
-              '<strong>200名以上の参加者を対象としたイベント運営を担当:</strong> 学内ハッカソンや技術コンテストの会場設営とロジスティクスを管理。',
-              '<strong>5名のチームを主導:</strong> 学内の技術イベント向けに特製小道具やステージセットを設計・製作。',
-              '<strong>夜間ハッカソンの運営を管理:</strong> 宿泊スペースの設営、会場のセキュリティ、参加者対応を監督。',
-              '<strong>スポンサーおよび参加者へのアウトリーチを担当:</strong> メールや直接の連絡を通じてイベント参加登録を促進。'
-            ]
-          },
-          {
-            role: '構造共同委員',
-            company: 'DJS Impulse',
-            date: '2025年9月 – 現在',
-            points: [
-              '<strong>高強度のグラスファイバー構造部品を製作:</strong> 競技用車両のボディパネルおよび構造フレームを製造。',
-              '<strong>後輩向けの分かりやすい技術資料・プレゼンを作成:</strong> 車両構造の基礎概念を教え、新メンバーのオンボーディングを支援。',
-              '<strong>技術報告書および設計資料を作成:</strong> エンジニアリング競技会での車両プレゼンテーション用ドキュメントを執筆。'
+              '<strong>5名の運営チームを率いて大学ハッカソンのエンドツーエンドのロジスティクスを管理</strong>。会場のスケジュール調整、技術インフラの構築、当日の運営を成功裏に調整し、<strong>350名以上の参加者をサポート</strong>。',
+              '<strong>企業へのアウトリーチとスポンサーとの折衝を管理</strong>し、業界パートナーへの技術的イベントロードマップの提案を通じて資金調達を成功させるとともに、学内の複数ネットワークで参加者登録を促進。'
             ]
           }
         ]
@@ -367,7 +297,7 @@ export const translations = {
           {
             name: '人工知能（AI）トレーニング',
             date: '2025年10月',
-            issuer: 'Acmegrade (Rendezvous IIT Delhi と提携) | Credential ID: AGC25090066'
+            issuer: 'Acmegrade (Rendezvous IIT Delhi) | Credential ID: AGC25090066'
           }
         ]
       }
